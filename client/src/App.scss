@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import '~antd/dist/antd.css';
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px 0;
+    padding: 0;
+    // line-height: 1;
+    font-family: 'Roboto', sans-serif;
+
+    background-color: #FFFFFF;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
