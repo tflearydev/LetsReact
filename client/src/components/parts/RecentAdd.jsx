@@ -14,7 +14,7 @@ const { Meta } = Card;
 
 var topRecent = {
     
-    top: '520px',
+    top: '535px',
     position: 'relative',
     zIndex: '9999',
    
@@ -33,7 +33,7 @@ function RecentAdd() {
         <Container>
 
 
-<div className='recent-spacing'>
+<div className='recent-add-spacing'>
         <span>Recently added</span>
 
        <a href="#" className="see-all">See All</a>

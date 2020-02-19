@@ -15,7 +15,7 @@ const { Meta } = Card;
 
 var top5 = {
     
-  top: '500px',
+  top: '530px',
   position: 'relative',
   zIndex: '9999'
 
@@ -54,7 +54,7 @@ function Categories() {
 
         <Meta
       title="Engines"
-      className="card-text"
+      className="man-card-text"
       
     />
         </Card>
@@ -77,8 +77,8 @@ function Categories() {
         </span> */}
 
         <Meta
-      title="Axels"
-      className="card-text"
+      title="Axles"
+      className="man-card-text"
       
     />
         </Card>
@@ -103,7 +103,7 @@ function Categories() {
 
         <Meta
       title="Transmissions"
-      className="card-text"
+      className="man-card-text"
       
     />
         </Card>
@@ -128,7 +128,7 @@ function Categories() {
 
         <Meta
       title="Cabs"
-      className="card-text"
+      className="man-card-text"
       
     />
         </Card>
@@ -153,7 +153,7 @@ function Categories() {
 
         <Meta
       title="Hoods"
-      className="card-text"
+      className="man-card-text"
       
     />
         </Card>
@@ -177,7 +177,7 @@ function Categories() {
 
         <Meta
       title="See All"
-      className="card-text"
+      className="man-card-text"
       
     />
         </Card>

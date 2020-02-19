@@ -13,9 +13,9 @@
 }
 
 .jumbotron {
-    height: 632px;
+    height: 667px;
     width: 100vw;
-    background-image: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/engine-1534799977.jpg');
+    background-image: url('../../assets/background.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 
 .overlay {
     z-index: 2 !important;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.05);
     height: 632px;
     width: 100vw
     // width: 100%;
