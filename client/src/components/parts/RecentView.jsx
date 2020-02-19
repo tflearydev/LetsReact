@@ -2,9 +2,12 @@ import React from 'react';
 
 import { Card, Col, Row, Avatar } from 'antd';
 import { Container } from 'react-bootstrap';
-import  Hood  from '../../assets/placeholders/recent1.png';
-import  Door  from '../../assets/placeholders/recent2.png';
-import  Engine  from '../../assets/placeholders/recent3.png';
+import  Transmission  from '../../assets/placeholders/recent4.png';
+import  Door  from '../../assets/placeholders/recent5.png';
+import  Transmission2  from '../../assets/placeholders/recent6.png';
+import  Engine  from '../../assets/placeholders/recent4.png';
+import  Hood  from '../../assets/placeholders/recent5.png';
+import  Front  from '../../assets/placeholders/recent6.png'
 import './RecentView.scss'
 
 
@@ -48,7 +51,7 @@ function RecentView() {
   <Card
     hoverable
     // style={{ width: 240 }}
-    cover={<img alt="example" src={Hood} className='recent-view-img' />}
+    cover={<img alt="example" src={Transmission} className='recent-view-img' />}
   >
     FREIGHTLINER
           <Meta title="Detroit engine - DD5 - 1.5 Lt." />
@@ -78,7 +81,7 @@ function RecentView() {
         <Card
           hoverable
         //   style={{ width: 240 }}
-          cover={<img alt="example" src={Engine} className='recent-view-img'  />}
+          cover={<img alt="example" src={Transmission2} className='recent-view-img'  />}
         >
            FREIGHTLINER
           <Meta title="Detroit engine - DD5 - 1.5 Lt." />
@@ -107,7 +110,7 @@ function RecentView() {
         <Card
           hoverable
         //   style={{ width: 240 }}
-          cover={<img alt="example" src={Engine} className='recent-view-img'  />}
+          cover={<img alt="example" src={Hood} className='recent-view-img'  />}
         >
            FREIGHTLINER
           <Meta title="Detroit engine - DD5 - 1.5 Lt." />
@@ -121,7 +124,7 @@ function RecentView() {
         <Card
           hoverable
         //   style={{ width: 240 }}
-          cover={<img alt="example" src={Engine} className='recent-view-img'  />}
+          cover={<img alt="example" src={Front} className='recent-view-img'  />}
         >
            FREIGHTLINER
           <Meta title="Detroit engine - DD5 - 1.5 Lt." />
