@@ -2,7 +2,7 @@ import React from "react";
 import Hamburger from "./Hamburger";
 import "./Nav.scss";
 // import menu from "../../menu.png";
-import user from "../../user.png";
+import user from "../../assets/user.png";
 // import Language from "./Language";
 import { Container } from 'react-bootstrap';
 

@@ -8,7 +8,7 @@ import {
   InputGroupAddon,
   FormInput
 } from "shards-react";
-import searchicon from "../../searchicon.png";
+import searchicon from "../../assets/searchicon.png";
 import Drop from "./Drop";
 
 const orStyle = {
