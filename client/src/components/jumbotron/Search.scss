@@ -1,0 +1,79 @@
+.search-card {
+    padding: 5px;
+    z-index: 3;
+    margin-top: 60px;
+    
+   
+}
+
+.card {
+    border-radius: 2px !important;
+}
+ 
+.col-lg-8 {
+    color: white;
+    position: relative;
+    z-index: 3;
+   text-align: left;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   
+}
+
+
+.welcome {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 40px;
+}
+
+.what {
+    font-weight: 700 !important;
+    color: black;
+    font-size: 21px !important;
+    margin-bottom: 21px !important;
+}
+
+.searchicon {
+    width: 20px;
+    height: 20px;
+    color: gray;
+}
+
+.input-group-text {
+    background-color: white !important;
+}
+
+.input-group {
+    background-color: white !important;
+   
+}
+
+.form-control, .addon {
+    border-radius: 2px !important;
+}
+
+
+.vin {
+    margin-bottom: 32px;
+   
+}
+
+.search-button {
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+    font-size: 16px !important;
+    height: 42px;
+    width: 168px;
+    background-color: #408FC6 !important;
+    border-color: #408FC6 !important;
+}
+
+.search-btn {
+    z-index: 9999;
+    position: relative;
+    margin-top: -20px;
+    
+}
