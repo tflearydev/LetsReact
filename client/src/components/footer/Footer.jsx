@@ -4,7 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 
 const footStyle = {
     position: 'relative',
-   top: '555px',
+   top: '606px',
    
    
 }

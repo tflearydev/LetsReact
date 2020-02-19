@@ -17,7 +17,7 @@ const { Meta } = Card;
 
 var topRecentView = {
     
-    top: '571px',
+    top: '604px',
     position: 'relative',
     zIndex: '9999',
     marginBottom: '30px'

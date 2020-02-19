@@ -14,11 +14,10 @@ const { Meta } = Card;
 
 var topRecent = {
     
-    top: '535px',
+    top: '561px',
     position: 'relative',
     zIndex: '9999',
    
-  
   }
 
 

@@ -31,16 +31,16 @@ function Categories() {
 
 
 
-<div style={{ background: 'white', padding: '30px' }}>
+<div style={{ background: 'white'}}>
 
 
 
     <Row gutter={16}>
 
 
-     <Col lg={4} sm={8} xs={8}>
+     <Col lg={4} sm={8} xs={8} className="cat-pad">
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false}  className="cat-div"
         cover={
             <img
             alt="example"
@@ -64,7 +64,7 @@ function Categories() {
 
       <Col lg={4} sm={8} xs={8}>
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false}  className="cat-div"
         cover={
             <img
             alt="example"
@@ -89,7 +89,7 @@ function Categories() {
 
       <Col lg={4} sm={8} xs={8}>
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false} className="cat-div"
         cover={
             <img
             alt="example"
@@ -114,7 +114,7 @@ function Categories() {
 
       <Col lg={4} sm={8} xs={8}>
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false} className="cat-div"
         cover={
             <img
             alt="example"
@@ -139,7 +139,7 @@ function Categories() {
 
       <Col lg={4} sm={8} xs={8}>
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false} className="cat-div"
         cover={
             <img
             alt="example"
@@ -163,20 +163,21 @@ function Categories() {
 
       <Col lg={4} sm={8} xs={8}>
          <a href="#" alt="">
-        <Card bordered={false}
+        <Card bordered={false} className="cat-div"
         cover={
             <img
             alt="example"
             src={All}
             className='cat-img mx-auto'
           />
+          
             }>
         {/* <span className="text-center">
         All Parts
         </span> */}
 
         <Meta
-      title="See All"
+      title="All parts"
       className="man-card-text"
       
     />

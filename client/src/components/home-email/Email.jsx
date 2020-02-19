@@ -8,7 +8,7 @@ const { Search } = Input;
 
 const emailStyle = {
     position: 'relative',
-    top: '541px',
+    top: '581px',
     paddingTop: '50px',
     paddingBottom: '50px',
     backgroundColor: '#EBEBEB',
@@ -54,7 +54,7 @@ Be the first to know about our daily sales!
         enterButton="Submit"
         size="large"
         onSearch={value => console.log(value)}
-        className="submit-btn"
+        className="submit-btn "
       />
 
 </div>

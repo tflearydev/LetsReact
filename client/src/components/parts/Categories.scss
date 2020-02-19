@@ -17,5 +17,16 @@
 .cat-img {
     height: 91px;
     width: 89px !important;
+    background-color: transparent;
     
+}
+
+.cat-div:hover  {
+    background-color: #408FC6;
+    
+}
+
+.cat-div {
+    padding-top: 30px !important;
+    padding-bottom: 5px !important;
 }
