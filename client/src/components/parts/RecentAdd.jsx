@@ -16,7 +16,7 @@ var topRecent = {
     
     top: '561px',
     position: 'relative',
-    zIndex: '9999',
+    zIndex: '1',
    
   }
 

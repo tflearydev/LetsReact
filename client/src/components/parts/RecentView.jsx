@@ -19,7 +19,7 @@ var topRecentView = {
     
     top: '604px',
     position: 'relative',
-    zIndex: '9999',
+    zIndex: '1',
     marginBottom: '30px'
   }
 

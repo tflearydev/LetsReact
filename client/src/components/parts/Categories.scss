@@ -23,9 +23,12 @@
 
 .cat-div:hover  {
     background-color: #408FC6;
+    // color: white !important
     
 }
-
+.cat-div:hover .ant-card-meta-title {
+    color: white !important
+}
 .cat-div {
     padding-top: 30px !important;
     padding-bottom: 5px !important;

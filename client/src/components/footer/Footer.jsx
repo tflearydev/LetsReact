@@ -20,7 +20,7 @@ const footHead = {
 
 const footSpace = {
     paddingRight: '0px',
-    paddingLeft: '3.5vw'
+    paddingLeft: '7vw'
 }
 
 const linkStyles = {
@@ -33,10 +33,11 @@ const linkDiv = {
 }
 
 const copyright = {
-    paddingLeft: '3.5vw',
+    // paddingLeft: '3.5vw',
     marginTop: '35px',
     marginBottom: '68px',
-    fontSize: '16px'
+    fontSize: '16px',
+    paddingLeft: '7vw'
 }
 
 

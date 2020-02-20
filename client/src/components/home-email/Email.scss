@@ -1,9 +1,11 @@
 .submit-btn {
-    width: 373px !important;
- 
+    width: 373px !important; 
+}
 
-   
-    
+@media screen and (max-width: 420px) {
+    .submit-btn {
+        width: 100% !important;
+    }
 }
 
 .search {
@@ -14,7 +16,9 @@
     margin-top: 5px;
     font-size: 20px;
     font-weight: bold;
-    color: #202B31
+    color: #202B31;
+    padding-right: 44px !important
+
 }
 
 .ant-btn {
@@ -24,7 +28,9 @@
     width: 127px;
 }
 
-
+.submitt {
+    padding-left: 40px !important;
+}
 
 
 .cookies {

@@ -17,7 +17,7 @@ var top5 = {
     
   top: '530px',
   position: 'relative',
-  zIndex: '9999'
+  zIndex: '1'
 
 }
 
