@@ -34,3 +34,15 @@ height: 280px;
 .recentadd-title {
     font-size: 20px !important;
 }
+
+@media screen and (max-width: 420px) {
+    .recent-add-space {
+        margin-bottom: 30px !important;
+}
+}
+
+@media screen and (max-width: 420px) {
+    .top-recent {
+        top: 458px !important
+}
+}

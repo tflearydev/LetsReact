@@ -26,7 +26,7 @@ function Categories() {
     return (
 
 
-      <section style={top5}>
+      <section style={top5} className='top-5'>
       <Container>
 
 

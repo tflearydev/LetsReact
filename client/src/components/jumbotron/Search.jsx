@@ -19,17 +19,28 @@ const orStyle = {
 function Search() {
   return (
     <Container>
-      <Row className="">
-        <Col lg={4}>
-          
+      
+      <Row className="mobile-search">
+        <Col sm={12}>
+          <Form.Group>
+            <InputGroup className="vin">
+              <FormInput placeholder="Search by term or VIN" />
+              <InputGroupAddon type="append">
+                <Button className="mobile-btn">Search</Button>
+              </InputGroupAddon>
+            </InputGroup>
+          </Form.Group>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={4} className="desktop-search">
           <Card className="search-card">
             <Card.Body>
               <Form>
                 {/* <Card.Title className="text-center what">
                   What part are you looking for
                 </Card.Title> */}
-
-                
 
                 <Form.Group>
                   <InputGroup className="vin">
@@ -45,8 +56,6 @@ function Search() {
                     </InputGroupAddon>
                   </InputGroup>
                 </Form.Group>
-
-
 
                 <hr style={orStyle}></hr>
 
@@ -96,18 +105,16 @@ function Search() {
           </Card>
 
           <div className="text-center search-btn">
-                <Button
-                  // gradient="aqua"
-                  //   rounded
-                  size="sm"
-                  type="submit"
-                  className="text-center search-button"
-                >
-                  Search
-                </Button>
-              </div>
-
-          
+            <Button
+              // gradient="aqua"
+              //   rounded
+              size="sm"
+              type="submit"
+              className="text-center search-button"
+            >
+              Search
+            </Button>
+          </div>
         </Col>
 
         <Col lg={8}>

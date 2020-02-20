@@ -31,14 +31,16 @@ var styles = {
   bmMenuWrap: {
     position: "fixed",
     height: "100%",
-    top: "0px"
+    top: "0px",
+    
   },
   bmMenu: {
     background: "#373a47",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
     height: "100vh",
-    zIndex: '50000'
+    // width: '100vw',
+    zIndex: '9999'
   },
   bmMorphShape: {
     fill: "#373a47"
@@ -48,11 +50,11 @@ var styles = {
     padding: "0.8em"
   },
   bmItem: {
-    display: "inline-block"
+    display: "block"
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
-    zIndex: "500000",
+    zIndex: "9999",
     width: "100vw",
     height: "100%",
     top: "0",
@@ -79,6 +81,7 @@ class Hamburger extends Component {
           <a id="home" className="menu-item" href="/">
             Home
           </a>
+          
           <a id="about" className="menu-item" href="/about">
             About
           </a>

@@ -7,6 +7,7 @@ import  manu2  from '../../assets/manufacturers/manu2.png'
 import  manu3  from '../../assets/manufacturers/manu3.png'
 import  manu4  from '../../assets/manufacturers/manu4.png'
 import  manu5  from '../../assets/manufacturers/manu5.png'
+import  manu6  from '../../assets/manufacturers/manu6.png'
 
 
 import './Manufacturer.scss';
@@ -22,12 +23,16 @@ var top5 = {
 
 }
 
+
+
+
+
 function Manufacturer() {
 
     return (
 
 
-      <section style={top5}>
+      <section style={top5} className='top6'>
       <Container>
 
 
@@ -43,28 +48,20 @@ function Manufacturer() {
 
 
 
-    <Row gutter={90}>
+    <Row gutter={90} className='row-style'>
 
 
-     <Col lg={5}>
+     <Col xs={12} lg={5}   className="manus manu-card1">
          <a href="#" alt="">
-        <Card bordered={false} className="manu-card"
+        <Card bordered={false} className="manu-card" 
         cover={
             <img
             alt="example"
             src={manu1}
-            className='manu-img1 mx-auto'
+            className='manu-img1 mx-auto detroit'
           />
             }>
-        {/* <span className="text-center">
-        All Parts
-        </span> */}
-{/* 
-        <Meta
-      title="Engines"
-      className="card-text"
-      
-    /> */}
+     
 
 
         </Card>
@@ -72,106 +69,92 @@ function Manufacturer() {
       </Col>
 
 
-      <Col lg={5} className="padding2">
+      <Col xs={12} lg={5} className="padding2 manus manu-card2" >
          <a href="#" alt="">
         <Card bordered={false} className="manu-card"
         cover={
             <img
             alt="example"
             src={manu2}
-            className='manu-img2 mx-auto'
+            className='manu-img2 mx-auto freightliner'
           />
             }>
-        {/* <span className="text-center">
-        All Parts
-        </span> */}
-
-        {/* <Meta
-      title="Axles"
-      className="card-text"
       
-    /> */}
         </Card>
         </a>
       </Col>
+      
 
 
 
-      <Col lg={4}>
+      <Col xs={12} lg={4} className="manus manu-card3">
          <a href="#" alt="">
         <Card bordered={false} className="manu-card"
         cover={
             <img
             alt="example"
             src={manu3}
-            className='manu-img3 mx-auto'
+            className='manu-img3 mx-auto cummins'
           />
             }>
-        {/* <span className="text-center">
-        All Parts
-        </span> */}
-
-        {/* <Meta
-      title="Transmissions"
-      className="card-text"
-      
-    /> */}
+     
         </Card>
         </a>
       </Col>
 
 
 
-      <Col lg={5}>
+      <Col xs={12} lg={5}  className="manus manu-card4">
          <a href="#" alt="">
         <Card bordered={false} className="manu-card"
         cover={
             <img
             alt="example"
             src={manu4}
-            className='manu-img4 mx-auto'
+            className='manu-img4 mx-auto paccar'
           />
             }>
-        {/* <span className="text-center">
-        All Parts
-        </span> */}
-{/* 
-        <Meta
-      title="Cabs"
-      className="card-text"
-      
-    /> */}
+        
         </Card>
         </a>
       </Col>
 
+     
 
 
-      <Col lg={5}>
+      <Col xs={12} sm={12} lg={5}  className="manus manu-card5">
          <a href="#" alt="">
         <Card bordered={false} className="manu-card"
         cover={
             <img
             alt="example"
             src={manu5}
-            className='manu-img5 mx-auto'
+            className='manu-img5 mx-auto volvo'
           />
             }>
-        {/* <span className="text-center">
-        All Parts
-        </span> */}
-
-        {/* <Meta
-      title="Hoods"
-      className="card-text"
-      
-    /> */}
+       
         </Card>
         </a>
       </Col>
 
+      <Col xs={{ span: 11, offset: 1 }} sm={12} lg={5}  className="manus manu-card6">
+         <a href="#" alt="">
+        <Card bordered={false} className="manu-card"
+        cover={
+            <img
+            alt="example"
+            src={manu6}
+            className='manu-img6 mx-auto'
+          />
+            }>
+       
+        </Card>
+        </a>
+      </Col>
 
-      {/* <Col lg={4} sm={8} xs={8}>
+      
+
+      {/* <Col xs={{ span: 11, offset: 1 }} sm={8} lg={4} >
          <a href="#" alt="">
         <Card bordered={false}
         cover={

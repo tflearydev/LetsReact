@@ -26,7 +26,7 @@ function RecentAdd() {
     return (
 
 
-        <section style={topRecent}>
+        <section style={topRecent} className='top-recent'>
 
             
         <Container>
@@ -43,7 +43,7 @@ function RecentAdd() {
 
             <Row gutter={16}>
 
-            <Col lg={8}>
+            <Col lg={8} xs={24} className="recent-add-space">
         
   <Card
     hoverable
@@ -58,9 +58,9 @@ function RecentAdd() {
 
   </Col>
 
-  <Col lg={8}>
+  <Col lg={8} xs={24} className="recent-add-space">
         
-        <Card
+        <Card 
           hoverable
         //   style={{ width: 240 }}
           cover={<img alt="example" src={Door} className='recent-img'  />}
@@ -73,9 +73,9 @@ function RecentAdd() {
       
         </Col>
 
-        <Col lg={8}>
+        <Col lg={8} xs={24}>
         
-        <Card
+        <Card 
           hoverable
         //   style={{ width: 240 }}
           cover={<img alt="example" src={Engine} className='recent-img'  />}

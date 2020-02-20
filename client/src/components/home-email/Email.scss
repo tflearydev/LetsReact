@@ -17,8 +17,26 @@
     font-size: 20px;
     font-weight: bold;
     color: #202B31;
-    padding-right: 44px !important
+    padding-right: 44px !important;
+    text-align: right;
 
+}
+
+@media screen and (max-width: 420px) {
+    .first-text {
+        font-size: 16px;
+        text-align: left !important;
+        padding-right: 0px !important;
+        margin-bottom: 15px
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .email-style {
+        padding-top: 35px !important;
+        padding-bottom: 35px !important;
+        top: 478px !important;
+    }
 }
 
 .ant-btn {
@@ -30,6 +48,12 @@
 
 .submitt {
     padding-left: 40px !important;
+}
+
+@media screen and (max-width: 420px) {
+    .submitt {
+        padding-left: 0px !important;
+    }
 }
 
 

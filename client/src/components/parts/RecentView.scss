@@ -35,3 +35,9 @@ height: 168px;
 .recentadd-title {
     font-size: 20px !important;
 }
+
+@media screen and (max-width: 420px) {
+    .top-recent-view {
+       top: 500px !important;
+}
+}

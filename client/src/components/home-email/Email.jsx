@@ -22,7 +22,7 @@ function HomeEmail() {
 
     return (
 
-    <section style={emailStyle}>
+    <section style={emailStyle} className='email-style'>
       {/* <Search
         placeholder="input search text"
         onSearch={value => console.log(value)}
@@ -40,7 +40,7 @@ function HomeEmail() {
           <Row>
 
 
-          <Col lg={12} className="text-right first-text">
+          <Col lg={12} className=" first-text">
 
 <div>
 Be the first to know about our daily sales!

@@ -21,6 +21,13 @@
     
 }
 
+@media screen and (max-width: 420px) {
+    .cat-img {
+        height: 80px;
+        width: 80px
+    }
+}
+
 .cat-div:hover  {
     background-color: #408FC6;
     // color: white !important
@@ -32,4 +39,32 @@
 .cat-div {
     padding-top: 30px !important;
     padding-bottom: 5px !important;
+}
+
+.ant-card-meta-title {
+    font-size: 20px !important;
+    font-weight:  700 !important;
+}
+
+@media screen and (max-width: 420px) {
+    .ant-card-meta-title {
+        font-size: 16px !important;
+        font-weight:  500 !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .top-5 {
+        top: 427px !important
+    }
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .cat-div {
+        padding-top: 20px !important;
+       
+    }
+    
 }

@@ -29,7 +29,7 @@ function RecentView() {
     return (
 
 
-        <section style={topRecentView}>
+        <section style={topRecentView} className='top-recent-view'>
 
             
         <Container>

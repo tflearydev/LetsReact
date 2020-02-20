@@ -22,13 +22,64 @@
     
 }
 
+@media screen and (max-width: 420px) {
+    .manu-img1 {
+        width: 99px !important;
+        height: 75px !important;
+       
+       
+        
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .manu-card1,  .manu-card3, .manu-card5 {
+        padding-left: 5px !important
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .manu-card2, .manu-card4, .manu-card6 {
+        padding-left: 0px !important
+    }
+}
+
+
+
 
 .manu-img2 {
     width: 246px !important;;
 height: 57px;
     // margin-left: 4%
-   margin-top: 24px
+//    margin-top: 24px
 }
+
+
+@media screen and (max-width: 420px) {
+    .manu-img2 {
+        width: 160px !important;
+        height: 75px !important;
+        padding-top: 20px;
+        padding-bottom: 5px
+     
+       
+        
+       
+    }
+}
+
+// @media screen and (max-width: 420px) {
+//     .manu-card2 {
+//         width: 160px !important;
+//         height: 75px !important;
+     
+       
+        
+       
+//     }
+// }
+
 
 .manu-img3 {
     width: 108px !important;;
@@ -38,6 +89,27 @@ height: 100px;
 //    margin-top: 30px
 }
 
+@media screen and (max-width: 420px) {
+    .manu-img3 {
+        width: 74px !important;
+        height: 69px !important;
+
+         margin-top: 50px;
+        // margin-right: 100% !important
+        // margin-top: 50px;
+        
+       
+    }
+}
+
+// @media screen and (max-width: 420px) {
+//     .manu-card3 {
+//        display: flex;
+//        justify-content: left;
+       
+//     }
+// }
+
 .manu-img4 {
     width: 246px !important;
 height: 42px;
@@ -45,24 +117,178 @@ height: 42px;
    margin-top: 30px
 }
 
+@media screen and (max-width: 420px) {
+    .manu-img4 {
+        width: 160px !important;
+        height: 69px !important;
+        padding-bottom: 25px;
+       
+        // margin-right: 20px;
+        margin-top: 60px;
+        // padding-left: 20px
+        
+    }
+}
+
+// @media screen and (max-width: 420px) {
+//     .manu-card4 {
+        
+//        padding-right: 20px !important
+       
+        
+//     }
+// }
+
+
+
+
 .manu-img5 {
     width: 145px !important;;
 height: 145px;
-margin-top: -15px
+margin-top: 45px
     // margin-left: 4%
 //    margin-top: 30px
 }
 
-.manu-card {
-    background-color: transparent !important
+
+@media screen and (max-width: 420px) {
+    .manu-img5 {
+        width: 100px !important;
+        height: 100px !important;
+        // margin-top: -105px;
+    }
 }
+
+.manu-img6 {
+    width: 145px !important;;
+height: 145px;
+margin-top: 55px;
+width: 150px;
+        height: 70px;
+       
+    // margin-left: 4%
+//    margin-top: 30px
+}
+
+
+// @media screen and (max-width: 420px) {
+//     .manu-img6 {
+        
+       
+      
+//     }
+// }
+
+.manu-card {
+    background-color: transparent !important;
+    
+}
+
+
+
+@media screen and (min-width: 420px) {
+    .manu-card6 {
+        display: none;
+    }
+}
+
+// .manu-card6 {
+//     margin-left: 20px !important
+// }
 
 .padding2 {
     padding-left: 0px !important;
 }
+
+// @media screen and (max-width: 420px) {
+//     .padding2 {
+//         margin-right: 10px
+//     }
+// }
 
 .recent-spacing {
     margin-bottom: 40px;
     font-weight: 600;
     color: #9D9C9A
 }
+
+@media screen and (max-width: 420px) {
+    .row-style {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+}
+
+
+// @media screen and (max-width: 420px) {
+//     .manus {
+//         padding: 0px !important;
+//         margin: 0px !important;
+//     }
+// }
+
+
+
+@media screen and (max-width: 420px) {
+    .top6 {
+       top: 522px !important
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width: 420px) {
+//     .detroit {
+//         width: 99px !important;
+//         height: 75px !important;
+       
+       
+        
+//     }
+// }
+
+// @media screen and (max-width: 420px) {
+//     .freightliner {
+//         width: 183px !important;
+//         height: 40px !important;
+     
+       
+        
+       
+//     }
+// }
+
+// @media screen and (max-width: 420px) {
+//     .paccar {
+//         width: 169px !important;
+//         height: 29px !important;
+        
+//     }
+// }
+
+// @media screen and (max-width: 420px) {
+//     .cummins {
+//         width: 74px !important;
+//         height: 69px !important
+//     }
+// }
+
+// @media screen and (max-width: 420px) {
+//     .volvo {
+//         width: 100px !important;
+//         height: 100px !important
+//     }
+// }
+
+
+
+
+

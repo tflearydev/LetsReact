@@ -77,3 +77,37 @@
     margin-top: -20px;
     
 }
+
+@media screen and (max-width: 420px) {
+    .desktop-search {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .mobile-search {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mobile-search {
+        top: 267px !important;
+        position: relative
+    }
+}
+
+.mobile-btn {
+    color: #408FC6;
+}
+
+@media screen and (max-width: 420px) {
+    .welcome {
+        text-align: center;
+        font-size: 26px;
+        line-height: 1.3;
+        font-weight: 700;
+    }
+}
+
+
