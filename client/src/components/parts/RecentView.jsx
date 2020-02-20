@@ -46,7 +46,7 @@ function RecentView() {
 
             <Row gutter={16}>
 
-            <Col lg={4}>
+            <Col lg={4} xs={12}>
         
   <Card
     hoverable
@@ -61,7 +61,7 @@ function RecentView() {
 
   </Col>
 
-  <Col lg={4}>
+  <Col lg={4} xs={12}>
         
         <Card
           hoverable
@@ -76,7 +76,7 @@ function RecentView() {
       
         </Col>
 
-        <Col lg={4}>
+        <Col lg={4} xs={12}>
         
         <Card
           hoverable
@@ -91,7 +91,7 @@ function RecentView() {
       
         </Col>
 
-        <Col lg={4}>
+        <Col lg={4} xs={12}>
         
         <Card
           hoverable
@@ -105,7 +105,7 @@ function RecentView() {
         </Card>
       
         </Col>
-        <Col lg={4}>
+        <Col lg={4} xs={12}>
         
         <Card
           hoverable
@@ -119,7 +119,7 @@ function RecentView() {
         </Card>
       
         </Col>
-        <Col lg={4}>
+        <Col lg={4} xs={12}>
         
         <Card
           hoverable

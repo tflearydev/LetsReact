@@ -22,14 +22,20 @@ function Search() {
       
       <Row className="mobile-search">
         <Col sm={12}>
-          <Form.Group>
-            <InputGroup className="vin">
-              <FormInput placeholder="Search by term or VIN" />
-              <InputGroupAddon type="append">
+          
+          {/* <Form>
+          <Form.Group> */}
+        
+            <InputGroup className="vin" >
+              <FormInput placeholder="Search by term or VIN" type='text'/>
+              <InputGroupAddon type="append" className="addon">
                 <Button className="mobile-btn">Search</Button>
               </InputGroupAddon>
             </InputGroup>
-          </Form.Group>
+            
+            {/* </Form.Group>
+            </Form> */}
+          
         </Col>
       </Row>
 

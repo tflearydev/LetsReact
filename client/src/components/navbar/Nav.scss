@@ -47,6 +47,12 @@
    
 }
 
+@media screen and (max-width: 420px) {
+    .circle {
+        margin-top: -5px
+    }
+}
+
 .title {
     margin-left: 13px;
    vertical-align: middle;

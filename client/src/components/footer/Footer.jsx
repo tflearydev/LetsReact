@@ -5,8 +5,7 @@ import './Footer.scss'
 const footStyle = {
     position: 'relative',
    top: '606px',
-   
-   
+    
 }
 
 const footHead = {

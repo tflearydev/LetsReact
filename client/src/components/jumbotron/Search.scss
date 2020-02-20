@@ -93,12 +93,15 @@
 @media screen and (max-width: 420px) {
     .mobile-search {
         top: 267px !important;
-        position: relative
+        position: relative;
+        z-index:9999;
     }
 }
 
 .mobile-btn {
-    color: #408FC6;
+    background-color: #408FC6 !important;
+    border-radius: 0 !important;
+    border-color: #408FC6 
 }
 
 @media screen and (max-width: 420px) {
