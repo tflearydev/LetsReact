@@ -8,12 +8,11 @@ var styles = {
     position: "relative",
     width: "32px",
     height: "32px",
-   
+
     float: "right",
-  
+
     color: "white !important",
     backgroundColor: "transparent"
-   
   },
   bmBurgerBars: {
     background: "#C4D0D9"
@@ -31,8 +30,7 @@ var styles = {
   bmMenuWrap: {
     position: "fixed",
     height: "100%",
-    top: "0px",
-    
+    top: "0px"
   },
   bmMenu: {
     background: "#373a47",
@@ -40,7 +38,7 @@ var styles = {
     fontSize: "1.15em",
     height: "100vh",
     // width: '100vw',
-    zIndex: '9999'
+    zIndex: "9999"
   },
   bmMorphShape: {
     fill: "#373a47"
@@ -75,13 +73,13 @@ class Hamburger extends Component {
         <Menu
           className="menu"
           styles={styles}
-          customBurgerIcon={<img src={menu} />}
+          customBurgerIcon={<img className="new-menu" src={menu} />}
           right
         >
           <a id="home" className="menu-item" href="/">
             Home
           </a>
-          
+
           <a id="about" className="menu-item" href="/about">
             About
           </a>

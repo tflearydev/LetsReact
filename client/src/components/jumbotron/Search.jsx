@@ -19,23 +19,20 @@ const orStyle = {
 function Search() {
   return (
     <Container>
-      
       <Row className="mobile-search">
         <Col sm={12}>
-          
           {/* <Form>
           <Form.Group> */}
-        
-            <InputGroup className="vin" >
-              <FormInput placeholder="Search by term or VIN" type='text'/>
-              <InputGroupAddon type="append" className="addon">
-                <Button className="mobile-btn">Search</Button>
-              </InputGroupAddon>
-            </InputGroup>
-            
-            {/* </Form.Group>
+
+          <InputGroup className="vin">
+            <FormInput placeholder="Search by term or VIN" type="text" />
+            <InputGroupAddon type="append" className="addon">
+              <Button className="mobile-btn">Search</Button>
+            </InputGroupAddon>
+          </InputGroup>
+
+          {/* </Form.Group>
             </Form> */}
-          
         </Col>
       </Row>
 

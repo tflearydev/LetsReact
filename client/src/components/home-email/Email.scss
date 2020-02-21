@@ -1,62 +1,60 @@
 .submit-btn {
-    width: 373px !important; 
+  width: 373px !important;
 }
 
 @media screen and (max-width: 420px) {
-    .submit-btn {
-        width: 100% !important;
-    }
+  .submit-btn {
+    width: 100% !important;
+  }
 }
 
 .search {
-    margin-left: 50px !important;
+  margin-left: 50px !important;
 }
 
 .first-text {
-    margin-top: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #202B31;
-    padding-right: 44px !important;
-    text-align: right;
-
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #202b31;
+  padding-right: 44px !important;
+  text-align: right;
 }
 
 @media screen and (max-width: 420px) {
-    .first-text {
-        font-size: 16px;
-        text-align: left !important;
-        padding-right: 0px !important;
-        margin-bottom: 15px
-    }
+  .first-text {
+    font-size: 16px;
+    text-align: left !important;
+    padding-right: 0px !important;
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .email-style {
-        padding-top: 35px !important;
-        padding-bottom: 35px !important;
-        top: 478px !important;
-    }
+  .email-style {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+    top: 478px !important;
+  }
 }
 
 .ant-btn {
-    border-radius: 0px 2px 2px 0px !important;
-    background-color: #408FC6 !important;
-    border-color:  #408FC6 !important;
-    width: 127px;
+  border-radius: 0px 2px 2px 0px !important;
+  background-color: #408fc6 !important;
+  border-color: #408fc6 !important;
+  width: 127px;
 }
 
 .submitt {
-    padding-left: 40px !important;
+  padding-left: 40px !important;
 }
 
 @media screen and (max-width: 420px) {
-    .submitt {
-        padding-left: 0px !important;
-    }
+  .submitt {
+    padding-left: 0px !important;
+  }
 }
 
-
 .cookies {
-    text-decoration: underline;
+  text-decoration: underline;
 }
