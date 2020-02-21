@@ -32,7 +32,7 @@ function RecentView() {
         </div>
 
         <Row gutter={16}>
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               // style={{ width: 240 }}
@@ -44,6 +44,7 @@ function RecentView() {
                 />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -51,7 +52,7 @@ function RecentView() {
             </Card>
           </Col>
 
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               //   style={{ width: 240 }}
@@ -59,6 +60,7 @@ function RecentView() {
                 <img alt="example" src={Door} className="recent-view-img" />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -66,7 +68,7 @@ function RecentView() {
             </Card>
           </Col>
 
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               //   style={{ width: 240 }}
@@ -78,6 +80,7 @@ function RecentView() {
                 />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -85,7 +88,7 @@ function RecentView() {
             </Card>
           </Col>
 
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               //   style={{ width: 240 }}
@@ -93,13 +96,14 @@ function RecentView() {
                 <img alt="example" src={Engine} className="recent-view-img" />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
           </Col>
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               //   style={{ width: 240 }}
@@ -107,13 +111,14 @@ function RecentView() {
                 <img alt="example" src={Hood} className="recent-view-img" />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
           </Col>
-          <Col lg={4} xs={12}>
+          <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
               hoverable
               //   style={{ width: 240 }}
@@ -121,6 +126,7 @@ function RecentView() {
                 <img alt="example" src={Front} className="recent-view-img" />
               }
             >
+               <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>

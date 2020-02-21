@@ -28,12 +28,14 @@ function RecentAdd() {
         </div>
 
         <Row gutter={16}>
-          <Col lg={8} xs={24} className="recent-add-space">
+          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
             <Card
               hoverable
               // style={{ width: 240 }}
               cover={<img alt="example" src={Hood} className="recent-img" />}
+            
             >
+              <div class='img-overlay'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -41,12 +43,13 @@ function RecentAdd() {
             </Card>
           </Col>
 
-          <Col lg={8} xs={24} className="recent-add-space">
+          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
             <Card
               hoverable
               //   style={{ width: 240 }}
               cover={<img alt="example" src={Door} className="recent-img" />}
             >
+               <div class='img-overlay'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -54,12 +57,18 @@ function RecentAdd() {
             </Card>
           </Col>
 
-          <Col lg={8} xs={24}>
+          <Col lg={8} xs={24} className=" recent-overlay">
             <Card
               hoverable
               //   style={{ width: 240 }}
-              cover={<img alt="example" src={Engine} className="recent-img" />}
+              cover={
+
+                
+              <img alt="example" src={Engine} className="recent-img " />
+            
+            }
             >
+               <div class='img-overlay'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>

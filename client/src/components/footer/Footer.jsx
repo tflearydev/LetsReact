@@ -17,7 +17,7 @@ const footHead = {
 
 const footSpace = {
   paddingRight: "0px",
-  paddingLeft: "120px"
+  paddingLeft: "60px"
 };
 
 const linkStyles = {
@@ -34,7 +34,7 @@ const copyright = {
   marginTop: "35px",
   marginBottom: "68px",
   fontSize: "16px",
-  paddingLeft: "120px"
+  paddingLeft: "60px"
 };
 
 function Footer() {
@@ -42,7 +42,7 @@ function Footer() {
     <footer style={footStyle} className="foot-style">
       <Container className="foot-cont">
         <Row style={footSpace} className="footspace">
-          <Col lg={3} xs={6}>
+          <Col lg={3} xs={6} className="desk-footer">
             <a href="#">
               <div style={footHead}>Buy</div>
             </a>
