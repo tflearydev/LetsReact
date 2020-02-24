@@ -36,7 +36,7 @@ function RecentView() {
             <Card
               // hoverable
               // style={{ width: 240 }}
-              className="recent-av-card"
+              
               cover={
                 <img
                   alt="example"
@@ -45,10 +45,13 @@ function RecentView() {
                 />
               }
             >
+
+             
                <div class='img-overlay2'></div>
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
+          
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
           </Col>
@@ -57,7 +60,7 @@ function RecentView() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+             
               cover={
                 <img alt="example" src={Door} className="recent-view-img" />
               }
@@ -74,7 +77,7 @@ function RecentView() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+            
               cover={
                 <img
                   alt="example"
@@ -95,7 +98,7 @@ function RecentView() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+              
               cover={
                 <img alt="example" src={Engine} className="recent-view-img" />
               }
@@ -111,7 +114,7 @@ function RecentView() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+             
               cover={
                 <img alt="example" src={Hood} className="recent-view-img" />
               }
@@ -127,7 +130,7 @@ function RecentView() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+            
               cover={
                 <img alt="example" src={Front} className="recent-view-img" />
               }

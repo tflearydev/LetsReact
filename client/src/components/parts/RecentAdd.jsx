@@ -32,11 +32,12 @@ function RecentAdd() {
             <Card
               // hoverable
               // style={{ width: 240 }}
-              className="recent-av-card"
+              
               cover={<img alt="example" src={Hood} className="recent-img" />}
             
             >
               <div class='img-overlay'></div>
+             
               FREIGHTLINER
               <Meta title="Detroit engine - DD5 - 1.5 Lt." />
               <div className="recent-price">$14,000</div>
@@ -48,7 +49,7 @@ function RecentAdd() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+             
               cover={<img alt="example" src={Door} className="recent-img" />}
             >
                <div class='img-overlay'></div>
@@ -63,7 +64,7 @@ function RecentAdd() {
             <Card
               // hoverable
               //   style={{ width: 240 }}
-              className="recent-av-card"
+            
               cover={
 
                 
