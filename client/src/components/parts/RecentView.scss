@@ -1,37 +1,48 @@
 .recent-view-img {
-    width: 168px;
-height: 168px;
+  width: 168px;
+  height: 168px;
 }
 
 .see-all {
-    float: right;
-   text-decoration: underline;
-    color: #9D9C9A !important;
+  float: right;
+  text-decoration: underline;
+  color: #9d9c9a !important;
 }
 
+.ant-card-body {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 0 !important;
+ 
+}
 .recent-view-spacing {
-    margin-bottom: 24px;
-    
-    color: #9D9C9A;
-    background-color: none;
-    font-size: 18px;
-    font-weight: 600
+  margin-bottom: 24px;
+
+  color: #9d9c9a;
+  background-color: none;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .ant-card {
-    border-color: transparent !important;
+  border-color: transparent !important;
 }
 
 .recent-price {
-    color: #408FC6;
-  
+  color: #408fc6;
 }
 
 .recent-title {
-    font-weight: 700;
-    font-size: 20px
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .recentadd-title {
-    font-size: 20px !important;
+  font-size: 20px !important;
+}
+
+@media screen and (max-width: 420px) {
+  .top-recent-view {
+    top: 500px !important;
+  }
 }

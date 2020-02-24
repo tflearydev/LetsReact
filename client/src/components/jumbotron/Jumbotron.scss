@@ -1,10 +1,9 @@
-
 .head {
-    position: absolute
+  position: absolute;
 }
 
-.jumbo, .overlay {
-    
+.jumbo,
+.overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -13,42 +12,45 @@
 }
 
 .jumbotron {
-    height: 667px;
-    width: 100vw;
-    background-image: url('../../assets/background.png');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-left: 119px !important;
-    border-radius: 0px !important;
-    z-index: 1;
-    padding: 73px 0 !important;
-    position: absolute;
-    // padding: 144px 116px
-    
-    
+  height: 667px;
+  width: 100vw;
+  background-image: url("../../assets/background.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 119px !important;
+  border-radius: 0px !important;
+  z-index: 1;
+  padding: 73px 0 !important;
+  position: absolute;
+  // padding: 144px 116px
 }
 
-@media (min-width: 1200px) {
-
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1240px !important;
-}
-}
+// @media (min-width: 1200px) {
+//   .container,
+//   .container-lg,
+//   .container-md,
+//   .container-sm,
+//   .container-xl {
+//     max-width: 1240px !important;
+//   }
+// }
 
 .overlay {
-    z-index: 2 !important;
-    background: rgba(0, 0, 0, 0.05);
-    height: 632px;
-    width: 100vw
-  
-   
-  
+  z-index: 2 !important;
+  background: rgba(0, 0, 0, 0.05);
+  height: 667px;
+  width: 100vw;
+}
 
+@media screen and (max-width: 420px) {
+  .jumbotron,
+  .overlay {
+    height: 467px;
+  }
 }
 
 .hello {
-    z-index: 99 !important;
-    position: relative;
+  z-index: 99 !important;
+  position: relative;
 }
-

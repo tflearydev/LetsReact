@@ -50,9 +50,25 @@ function Search() {
 
   return (
     <Container>
-      <Row className="">
-        <Col lg={4}>
-          
+      <Row className="mobile-search">
+        <Col sm={12}>
+          {/* <Form>
+          <Form.Group> */}
+
+          <InputGroup className="vin">
+            <FormInput placeholder="Search by term" type="text" />
+            <InputGroupAddon type="append" className="addon">
+              <Button className="mobile-btn">Search</Button>
+            </InputGroupAddon>
+          </InputGroup>
+
+          {/* </Form.Group>
+            </Form> */}
+        </Col>
+      </Row>
+
+      <Row>
+        <Col lg={4} className="desktop-search">
           <Card className="search-card">
             <Card.Body>
               <Form>
@@ -60,11 +76,9 @@ function Search() {
                   What part are you looking for
                 </Card.Title> */}
 
-                
-
                 <Form.Group>
                   <InputGroup className="vin">
-                    <FormInput placeholder="Search by term or VIN" />
+                    <FormInput placeholder="Search by term " />
                     <InputGroupAddon type="append" className="addon">
                       <InputGroupText>
                         <img
@@ -76,8 +90,6 @@ function Search() {
                     </InputGroupAddon>
                   </InputGroup>
                 </Form.Group>
-
-
 
                 <hr style={orStyle}></hr>
 
@@ -133,18 +145,16 @@ function Search() {
           </Card>
 
           <div className="text-center search-btn">
-                <Button
-                  // gradient="aqua"
-                  //   rounded
-                  size="sm"
-                  type="submit"
-                  className="text-center search-button"
-                >
-                  Search
-                </Button>
-              </div>
-
-          
+            <Button
+              // gradient="aqua"
+              //   rounded
+              size="sm"
+              type="submit"
+              className="text-center search-button"
+            >
+              Search
+            </Button>
+          </div>
         </Col>
 
         <Col lg={8}>

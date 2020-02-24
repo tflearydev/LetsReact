@@ -3,55 +3,34 @@ import Hamburger from "./Hamburger";
 import "./Nav.scss";
 // import menu from "../../menu.png";
 import user from "../../assets/user.png";
-import cart from "../../assets/cart.svg"
+import cart from "../../assets/cart.svg";
 // import Language from "./Language";
-import { Container } from 'react-bootstrap';
-
-
-
-
-
+import { Container } from "react-bootstrap";
 
 function Navbar() {
   return (
     <>
-
-    
       <nav className="outerNav">
+        <Container>
+          <div className="circle"></div>
 
-      <Container>
+          <span className="title">GENERATION PARTS</span>
 
-        <div className="circle"></div>
+          {/* <img src={menu} alt=""></img> */}
 
-        <span className="title">GENERATION PARTS</span>
+          <div className="nice">
+            <Hamburger />
 
-        {/* <img src={menu} alt=""></img> */}
+            <img src={cart} alt="" className="cart"></img>
 
+            <a>
+              <span className="sell">Start selling</span>
+            </a>
 
-
-<div className="nice">
-        <Hamburger />
-
-        <img src={cart} alt="" className="cart"></img>
-
-        <a><span className="sell">Start selling</span></a>
-
-        {/* <Language /> */}
-        </div>
-
-
-       
-
-    
-
-        
-
-        
+            {/* <Language /> */}
+          </div>
         </Container>
-     
       </nav>
-      
-      
     </>
   );
 }

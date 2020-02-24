@@ -1,6 +1,6 @@
-import React from 'react'
-import { Select } from 'antd';
-import './Drop.scss'
+import React from "react";
+import { Select } from "antd";
+import "./Drop.scss";
 
 const { Option } = Select;
 
@@ -9,15 +9,15 @@ function onChange(value) {
 }
 
 function onBlur() {
-  console.log('blur');
+  console.log("blur");
 }
 
 function onFocus() {
-  console.log('focus');
+  console.log("focus");
 }
 
 function onSearch(val) {
-  console.log('search:', val);
+  console.log("search:", val);
 }
 
 function Drop({state}) {

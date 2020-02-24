@@ -1,101 +1,88 @@
-import React from 'react';
+import React from "react";
 
-import { Card, Col, Row, Avatar } from 'antd';
-import { Container } from 'react-bootstrap';
-import  Hood  from '../../assets/placeholders/recent1.png';
-import  Door  from '../../assets/placeholders/recent2.png';
-import  Engine  from '../../assets/placeholders/recent3.png';
-import './RecentAdd.scss'
-
-
-
+import { Card, Col, Row, Avatar } from "antd";
+import { Container } from "react-bootstrap";
+import Hood from "../../assets/placeholders/recent1.png";
+import Door from "../../assets/placeholders/recent2.png";
+import Engine from "../../assets/placeholders/recent3.png";
+import "./RecentAdd.scss";
 
 const { Meta } = Card;
 
 var topRecent = {
-    
-    top: '561px',
-    position: 'relative',
-    zIndex: '1',
-   
-  }
-
+  top: "561px",
+  position: "relative",
+  zIndex: "1"
+};
 
 function RecentAdd() {
+  return (
+    <section style={topRecent} className="top-recent">
+      <Container>
+        <div className="recent-add-spacing">
+          <span>Recently added</span>
 
-    return (
-
-
-        <section style={topRecent}>
-
-            
-        <Container>
-
-
-<div className='recent-add-spacing'>
-        <span>Recently added</span>
-
-       <a href="#" className="see-all">See All</a>
-
-
+          <a href="#" className="see-all">
+            See All
+          </a>
         </div>
 
+        <Row gutter={16}>
+          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
+            <Card
+              // hoverable
+              // style={{ width: 240 }}
+              
+              cover={<img alt="example" src={Hood} className="recent-img" />}
+            
+            >
+              <div class='img-overlay'></div>
+             
+              FREIGHTLINER
+              <Meta title="Detroit engine - DD5 - 1.5 Lt." />
+              <div className="recent-price">$14,000</div>
+              {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
+            </Card>
+          </Col>
 
-            <Row gutter={16}>
+          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
+            <Card
+              // hoverable
+              //   style={{ width: 240 }}
+             
+              cover={<img alt="example" src={Door} className="recent-img" />}
+            >
+               <div class='img-overlay'></div>
+              FREIGHTLINER
+              <Meta title="Detroit engine - DD5 - 1.5 Lt." />
+              <div className="recent-price">$14,000</div>
+              {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
+            </Card>
+          </Col>
 
-            <Col lg={8}>
-        
-  <Card
-    hoverable
-    // style={{ width: 240 }}
-    cover={<img alt="example" src={Hood} className='recent-img' />}
-  >
-    FREIGHTLINER
-          <Meta title="Detroit engine - DD5 - 1.5 Lt." />
-          <div className="recent-price">$14,000</div>
-          {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
-  </Card>
+          <Col lg={8} xs={24} className=" recent-overlay">
+            <Card
+              // hoverable
+              //   style={{ width: 240 }}
+            
+              cover={
 
-  </Col>
-
-  <Col lg={8}>
-        
-        <Card
-          hoverable
-        //   style={{ width: 240 }}
-          cover={<img alt="example" src={Door} className='recent-img'  />}
-        >
-            FREIGHTLINER
-          <Meta title="Detroit engine - DD5 - 1.5 Lt." />
-          <div className="recent-price">$14,000</div>
-          {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
-        </Card>
-      
-        </Col>
-
-        <Col lg={8}>
-        
-        <Card
-          hoverable
-        //   style={{ width: 240 }}
-          cover={<img alt="example" src={Engine} className='recent-img'  />}
-        >
-           FREIGHTLINER
-          <Meta title="Detroit engine - DD5 - 1.5 Lt." />
-          <div className="recent-price">$14,000</div>
-          {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
-        </Card>
-      
-        </Col>
-
-
-  </Row>
-  </Container>
-
-  </section>
-
-    )
-
+                
+              <img alt="example" src={Engine} className="recent-img " />
+            
+            }
+            >
+               <div class='img-overlay'></div>
+              FREIGHTLINER
+              <Meta title="Detroit engine - DD5 - 1.5 Lt." />
+              <div className="recent-price">$14,000</div>
+              {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+  );
 }
-  
+
 export default RecentAdd;
