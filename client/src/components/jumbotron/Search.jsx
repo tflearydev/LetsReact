@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useReducer, useEffect} from "react";
 import { Card, Form, Container, Row, Col, Button } from "react-bootstrap";
 // import { Menu, Dropdown, Button, Icon, message  } from 'antd';
 import "./Search.scss";
@@ -11,12 +11,43 @@ import {
 import searchicon from "../../assets/searchicon.png";
 import Drop from "./Drop";
 
+//API
+import {fetchCategories} from '../../api/categories-api';
+
+//Reducers
+import CategoriesReducer from '../../reducers/categories/CategoriesReducer';
+
+
 const orStyle = {
   marginTop: "-5px",
   marginBottom: "30px"
 };
 
+
 function Search() {
+  //STATE MANAGEMENT
+  const [categoriesState, dispatchCategories] = useReducer(CategoriesReducer,{
+    isFetching: false,
+    data: [],
+    dataLoaded: false,
+    selected_id: null
+
+  });
+
+  //Onload check state
+  useEffect(() => {
+    if(!categoriesState.dataLoaded){
+      dispatchCategories({type: 'IS_FETCHING', payload: true});
+      runFetchCategories();            
+    }
+  }, []);//pass in array what to look for to rerender
+
+  //FUNCTIONS AND EVENT HANDLERS
+  const runFetchCategories = async () => {
+    const categories_data = await fetchCategories();  
+    dispatchCategories({type: 'LOAD_DATA', payload: categories_data}); 
+  }
+
   return (
     <Container>
       <Row className="mobile-search">
@@ -65,7 +96,7 @@ function Search() {
                 <Form.Group>
                   {/* <Form.Label>Manufacturer</Form.Label> */}
 
-                  <Drop />
+                  
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
@@ -77,7 +108,13 @@ function Search() {
                       <option>4</option>
                       <option>5</option>
                     </Form.Control> */}
-                  <Drop />
+                  {
+                    !categoriesState.dataLoaded ?
+                      (<p>Data Loading...</p>) :
+                      <Drop state = {categoriesState} />
+                      /*<Drop state = {} />*/
+                  }
+
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
@@ -89,7 +126,7 @@ function Search() {
                       <option>4</option>
                       <option>5</option>
                     </Form.Control> */}
-                  <Drop />
+                  
                 </Form.Group>
               </Form>
 
