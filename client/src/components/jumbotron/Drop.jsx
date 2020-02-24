@@ -20,8 +20,8 @@ function onSearch(val) {
   console.log('search:', val);
 }
 
-function Drop() {
-
+function Drop({state}) {
+  console.log(state)
   return (
   <>
     <Select
@@ -38,9 +38,11 @@ function Drop() {
       option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
     }
   >
-    <Option value="jack">Jack</Option>
-    <Option value="lucy">Lucy</Option>
-    <Option value="tom">Tom</Option>
+    {
+      state.data.map((obj) => (<Option key={obj.id} value = {obj.id}>{obj.name}</Option>))
+
+    }
+    
   </Select>
   </>
 
