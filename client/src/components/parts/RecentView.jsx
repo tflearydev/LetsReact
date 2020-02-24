@@ -34,8 +34,9 @@ function RecentView() {
         <Row gutter={16}>
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               // style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img
                   alt="example"
@@ -54,8 +55,9 @@ function RecentView() {
 
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img alt="example" src={Door} className="recent-view-img" />
               }
@@ -70,8 +72,9 @@ function RecentView() {
 
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img
                   alt="example"
@@ -90,8 +93,9 @@ function RecentView() {
 
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img alt="example" src={Engine} className="recent-view-img" />
               }
@@ -105,8 +109,9 @@ function RecentView() {
           </Col>
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img alt="example" src={Hood} className="recent-view-img" />
               }
@@ -120,8 +125,9 @@ function RecentView() {
           </Col>
           <Col lg={4} xs={12} className='recent-overlay2'>
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
                 <img alt="example" src={Front} className="recent-view-img" />
               }

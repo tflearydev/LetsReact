@@ -25,7 +25,7 @@ function Search() {
           <Form.Group> */}
 
           <InputGroup className="vin">
-            <FormInput placeholder="Search by term or VIN" type="text" />
+            <FormInput placeholder="Search by term" type="text" />
             <InputGroupAddon type="append" className="addon">
               <Button className="mobile-btn">Search</Button>
             </InputGroupAddon>
@@ -47,7 +47,7 @@ function Search() {
 
                 <Form.Group>
                   <InputGroup className="vin">
-                    <FormInput placeholder="Search by term or VIN" />
+                    <FormInput placeholder="Search by term " />
                     <InputGroupAddon type="append" className="addon">
                       <InputGroupText>
                         <img

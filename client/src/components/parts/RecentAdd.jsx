@@ -30,8 +30,9 @@ function RecentAdd() {
         <Row gutter={16}>
           <Col lg={8} xs={24} className="recent-add-space recent-overlay">
             <Card
-              hoverable
+              // hoverable
               // style={{ width: 240 }}
+              className="recent-av-card"
               cover={<img alt="example" src={Hood} className="recent-img" />}
             
             >
@@ -45,8 +46,9 @@ function RecentAdd() {
 
           <Col lg={8} xs={24} className="recent-add-space recent-overlay">
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={<img alt="example" src={Door} className="recent-img" />}
             >
                <div class='img-overlay'></div>
@@ -59,8 +61,9 @@ function RecentAdd() {
 
           <Col lg={8} xs={24} className=" recent-overlay">
             <Card
-              hoverable
+              // hoverable
               //   style={{ width: 240 }}
+              className="recent-av-card"
               cover={
 
                 
