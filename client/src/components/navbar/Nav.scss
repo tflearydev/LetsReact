@@ -3,7 +3,7 @@
   font-size: 24px;
   padding-top: 35px;
   padding-bottom: 22px;
-  color: #e3e3e3;
+  color: #FFFFFF;
   font-weight: 600;
   z-index: 2;
   position: absolute;
@@ -16,7 +16,7 @@
     font-size: 24px;
     padding-top: 17px;
     padding-bottom: 22px;
-    color: #e3e3e3;
+    color: #FFFFFF;
     font-weight: 600;
     z-index: 2;
     position: absolute;
@@ -31,7 +31,7 @@
 // }
 
 .circle {
-  border: 3px solid #e3e3e3;
+  border: 3px solid #FFFFFF;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -49,6 +49,7 @@
 .title {
   margin-left: 13px;
   vertical-align: middle;
+  color: #FFFFFF
 }
 
 .cart {
@@ -59,7 +60,7 @@
   height: 32px;
   // right: 201.08px;
   float: right;
-  margin-right: 43.08px;
+  margin-right: 40px;
 
   margin-top: 4px;
   vertical-align: middle;
@@ -89,13 +90,14 @@
   //    position: absolute;
   font-size: 18px;
   margin-top: 4px;
-  margin-right: 34.08px;
-  border: 2px solid #c4d0d9;
+  margin-right: 40px;
+  border: 2px solid #FFFFFF;
   padding: 0.5px 6px;
   border-radius: 3px;
   width: 120px;
   height: 32px;
   text-align: center;
+  color: #FFFFFF
   //    clear: both !important;
 
   // margin-right: 20px;
@@ -110,11 +112,12 @@
     text-align: center;
     margin-top: 6px;
     margin-right: 34.08px;
-    border: 2px solid #c4d0d9;
+    border: 2px solid #FFFFFF;
     padding: 0.5px 6px;
     border-radius: 3px;
     width: 120px;
     height: 30px;
+    color: #FFFFFF
     //    clear: both !important;
 
     // margin-right: 20px;
@@ -122,7 +125,8 @@
 }
 
 .nice {
-  margin-top: -37px;
+  
+  float: right
 }
 
 @media screen and (max-width: 800px) {
