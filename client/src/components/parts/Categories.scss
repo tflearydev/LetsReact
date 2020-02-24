@@ -5,11 +5,6 @@
  
 }
 
-// .ant-card-meta-title {
-    
-//     font-weight: 600 !important;
-   
-// }
 
 .cat-img {
     height: 91px;
@@ -17,6 +12,26 @@
     background-color: transparent;
     
 }
+
+
+@media screen and (min-width: 420px) {
+    .cat-img2 {
+    width: 135px !important;
+    height: 91px;
+    background-color: transparent;
+    
+}
+}
+
+// @media screen and (max-width: 420px) {
+//     .cat-img2 {
+//         height: 80px;
+//         width: 100px 
+//     }
+// }
+
+
+
 
 .ant-card-body {
     padding-top: 10px !important;
@@ -27,9 +42,9 @@
   }
 
 @media screen and (max-width: 420px) {
-    .cat-img {
+    .cat-img, .cat-img2 {
         height: 80px;
-        width: 80px
+        width: 76px
     }
 }
 

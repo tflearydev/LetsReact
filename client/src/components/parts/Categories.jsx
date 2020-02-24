@@ -52,7 +52,7 @@ function Categories() {
                   bordered={false}
                   className="cat-div"
                   cover={
-                    <img alt="example" src={Axel} className="cat-img mx-auto" />
+                    <img alt="example" src={Axel} className="cat-img2 mx-auto" />
                   }
                 >
                   {/* <span className="text-center">
@@ -110,7 +110,7 @@ function Categories() {
                   bordered={false}
                   className="cat-div"
                   cover={
-                    <img alt="example" src={Hood} className="cat-img mx-auto" />
+                    <img alt="example" src={Hood} className="cat-img2 mx-auto" />
                   }
                 >
                   {/* <span className="text-center">
