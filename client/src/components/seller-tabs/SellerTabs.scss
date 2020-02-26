@@ -1,0 +1,27 @@
+.tab-section {
+    background-color: white;
+    top: 345px;
+  position: relative;
+  z-Index: 1;
+  font-size: 18px;
+  max-width: 1199px;
+ height: 81px;
+ padding-top: 25px;
+//  text-align: center
+}
+
+.tab-style {
+    font-size: 18px
+}
+
+
+@media (min-width: 992px) {
+
+.ant-col-lg-3 {
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 13.5% !important;
+}
+
+}

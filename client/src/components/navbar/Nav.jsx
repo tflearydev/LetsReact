@@ -1,50 +1,70 @@
 import React from "react";
 import Hamburger from "./Hamburger";
 import "./Nav.scss";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import {
+  BrowserRouter, Router,
+  Route,
+  Switch,
+  Link,
+  withRouter
+} from "react-router-dom";
 // import menu from "../../menu.png";
 import user from "../../assets/user.png";
 import cart from "../../assets/cart.svg";
 // import Language from "./Language";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import Button from "./BuySellButton";
+
+
+
 
 function appNav() {
+
+  const WrappedButton = withRouter(Button);
+
+
   return (
     <>
+      
+        <nav className="outerNav">
+          <Container>
+            <Navbar.Brand href="/">
+              <div className="circle"></div>
 
-    <Router>
-      <nav className="outerNav">
-        <Container>
+              <span className="title">GENERATION PARTS</span>
+            </Navbar.Brand>
 
-          <Navbar.Brand href='/'>
-          <div className="circle"></div>
+            {/* <img src={menu} alt=""></img> */}
 
-          <span className="title">GENERATION PARTS</span>
-          </Navbar.Brand>
+            <Nav className="nice">
 
-          {/* <img src={menu} alt=""></img> */}
 
-          <Nav className="nice">
-            
+              
+                <WrappedButton />
+       
 
-        
+             
+
+              {/* <Link to="/">
+                <WrappedButton />
+              </Link> */}
+
+              {/*         
             <a href='/sell'>
               <span className="sell">Start selling</span>
-            </a>
+            </a> */}
 
-            <a href='/'>
-            <img src={cart} alt="" className="cart"></img>
-            </a>
+              <a href="/">
+                <img src={cart} alt="" className="cart"></img>
+              </a>
 
+              <Hamburger />
 
-            <Hamburger />
-
-            {/* <Language /> */}
-          </Nav>
-        </Container>
-      </nav>
-
-      </Router>
+              {/* <Language /> */}
+            </Nav>
+          </Container>
+        </nav>
+     
     </>
   );
 }

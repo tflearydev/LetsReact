@@ -33,6 +33,8 @@ function RecentView() {
 
         <Row gutter={16}>
           <Col lg={4} xs={12} className='recent-overlay2'>
+
+            <a href="#">
             <Card
               // hoverable
               // style={{ width: 240 }}
@@ -54,9 +56,12 @@ function RecentView() {
           
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+            </a>
           </Col>
 
           <Col lg={4} xs={12} className='recent-overlay2'>
+
+            <a href="#">
             <Card
               // hoverable
               //   style={{ width: 240 }}
@@ -71,9 +76,12 @@ function RecentView() {
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+            </a>
           </Col>
 
           <Col lg={4} xs={12} className='recent-overlay2'>
+
+            <a href="#">
             <Card
               // hoverable
               //   style={{ width: 240 }}
@@ -92,9 +100,12 @@ function RecentView() {
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+            </a>
           </Col>
 
           <Col lg={4} xs={12} className='recent-overlay2'>
+
+          <a href="#">
             <Card
               // hoverable
               //   style={{ width: 240 }}
@@ -109,8 +120,12 @@ function RecentView() {
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+        </a>
+
           </Col>
           <Col lg={4} xs={12} className='recent-overlay2'>
+
+            <a href="#">
             <Card
               // hoverable
               //   style={{ width: 240 }}
@@ -125,8 +140,13 @@ function RecentView() {
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+            </a>
+
+
           </Col>
           <Col lg={4} xs={12} className='recent-overlay2'>
+            
+            <a href="#">
             <Card
               // hoverable
               //   style={{ width: 240 }}
@@ -141,6 +161,7 @@ function RecentView() {
               <div className="recent-price">$14,000</div>
               {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
             </Card>
+            </a>
           </Col>
         </Row>
       </Container>

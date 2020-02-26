@@ -11,7 +11,7 @@
   left: 0;
 }
 
-.jumbotron {
+.jumbo {
   height: 667px;
   width: 100vw;
   background-image: url("../../assets/background.png");
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 420px) {
-  .jumbotron,
+  .jumbo,
   .overlay {
     height: 467px;
   }
