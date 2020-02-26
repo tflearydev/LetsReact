@@ -13,9 +13,17 @@ import Drop from "./Drop";
 
 //API
 import {fetchCategories} from '../../api/categories-api';
+import {fetchMakesByCategoryId} from '../../api/makes-api';
+
 
 //Reducers
 import CategoriesReducer from '../../reducers/categories/CategoriesReducer';
+import MakesReducer from '../../reducers/makes/MakesReducer';
+
+//Drop Loader During API Calls
+import WithLoadingDrop from "../WithLoadingDrop";
+const WithLoadingDropCategories = WithLoadingDrop(Drop);
+const WithLoadingDropMakes = WithLoadingDrop(Drop);
 
 
 const orStyle = {
@@ -40,6 +48,14 @@ function Search() {
 
   });
 
+  const [makesState, dispatchMakes] = useReducer(MakesReducer,{
+    isFetching: false,
+    data: [],
+    dataLoaded: false,
+    selected_id: null
+
+  });
+
   //Onload check state
   useEffect(() => {
     if(!categoriesState.dataLoaded){
@@ -48,11 +64,45 @@ function Search() {
     }
   }, []);//pass in array what to look for to rerender
 
-  //FUNCTIONS AND EVENT HANDLERS
+  //FUNCTIONS AND EVENT HANDLERS - ONLOAD
   const runFetchCategories = async () => {
     const categories_data = await fetchCategories();  
     dispatchCategories({type: 'LOAD_DATA', payload: categories_data}); 
   }
+
+  //FUNCTIONS AND EVENT HANDLERS - Categories onchange
+  const runFetchMakesByCategoryId = async (category_id) => {
+    const makes_data = await fetchMakesByCategoryId(category_id);  
+    dispatchMakes({type: 'LOAD_DATA', payload: makes_data}); 
+  }
+
+  const onCategoriesChange = (e) =>{
+      let value = e; 
+      if(isNaN(value)){
+        dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: null}); 
+        dispatchMakes({type: 'LOAD_DATA', payload: []});
+        //dispatchModel({type: 'LOAD_DATA', payload: []});
+
+      }else{
+        dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: value}); 
+        dispatchMakes({type: 'IS_FETCHING', payload: true});
+        runFetchMakesByCategoryId(value);   
+      }
+  }
+
+  const onMakesChange = (e) =>{
+    let value = e; 
+    // if(isNaN(value)){
+    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: null}); 
+    //   dispatchMakes({type: 'LOAD_DATA', payload: []});
+    //   //dispatchModel({type: 'LOAD_DATA', payload: []});
+
+    // }else{
+    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: value}); 
+    //   dispatchMakes({type: 'IS_FETCHING', payload: true});
+    //   runFetchMakesByCategoryId(value);   
+    // }
+}
 
   return (
     <Container>
@@ -102,26 +152,16 @@ function Search() {
                 <div class="separator"><span style={orStyle}>or</span></div>
 
                 <Form.Group>
-                  {/* <Form.Label>Manufacturer</Form.Label> */}
+                  {/* Categories Dropdown */}
+                  <WithLoadingDropCategories type="default" state = {categoriesState} onChange={onCategoriesChange} data={categoriesState.data} />
+              
 
                   
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
-                  {/* <Form.Label>Model</Form.Label>
-                    <Form.Control as="select">
-                      <option>Any</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </Form.Control> */}
-                  {
-                    !categoriesState.dataLoaded ?
-                      (<p>Data Loading...</p>) :
-                      <Drop state = {categoriesState} />
-                      /*<Drop state = {} />*/
-                  }
+                  {/* Makes Dropdown */}
+                  <WithLoadingDropMakes type="v2" state = {makesState} onChange={onMakesChange} data={makesState.data} />
 
                 </Form.Group>
 
