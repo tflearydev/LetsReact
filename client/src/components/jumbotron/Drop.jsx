@@ -20,8 +20,7 @@ function onSearch(val) {
   console.log("search:", val);
 }
 
-function Drop({state}) {
-  console.log(state)
+function Drop({data, onChange}) {
   return (
   <>
     <Select
@@ -39,7 +38,7 @@ function Drop({state}) {
     }
   >
     {
-      state.data.map((obj) => (<Option key={obj.id} value = {obj.id}>{obj.name}</Option>))
+      data.map((obj) => (<Option key={obj.id} value = {obj.id}>{obj.name}</Option>))
 
     }
     
