@@ -94,7 +94,12 @@ function Search() {
                 <hr style={orStyle}></hr>
 
                 <Form.Group>
-                  {/* <Form.Label>Manufacturer</Form.Label> */}
+                {
+                  !categoriesState.dataLoaded ?
+                    (<p>Data Loading...</p>) :
+                    <Drop state = {categoriesState} />
+                }
+
 
                   
                 </Form.Group>
