@@ -22,6 +22,14 @@
   font-weight: 600;
 }
 
+.recent-add-space {
+  margin-bottom: 33px;
+  color: #9d9c9a;
+  background-color: none;
+  font-size: 18px;
+  // font-weight: 600;
+}
+
 .ant-card {
   border-color: transparent !important;
 }
@@ -45,8 +53,27 @@
   }
 }
 
+@media screen and (min-width: 420px) {
+
+.top-recent {
+  top: 561px;
+  position: relative;
+  z-Index: 1
+}
+}
+
 @media screen and (max-width: 420px) {
   .top-recent {
     top: 458px !important;
   }
 }
+
+@media screen and (min-width: 420px) {
+
+  .top-recent2 {
+    top: 424px;
+    position: relative;
+    z-Index: 1;
+  }
+  }
+

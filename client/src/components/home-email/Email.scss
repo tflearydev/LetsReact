@@ -38,6 +38,30 @@
   }
 }
 
+@media screen and (min-width: 420px) {
+  .email-style {
+    position: relative;
+top: 538px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: #EBEBEB;
+margin-top: 75px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .email-style2 {
+    position: relative;
+top: 380px;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: #EBEBEB;
+margin-top: 75px;
+  }
+}
+
+
+
 .ant-btn {
   border-radius: 0px 2px 2px 0px !important;
   background-color: #408fc6 !important;

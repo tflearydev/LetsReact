@@ -19,8 +19,14 @@ import CategoriesReducer from '../../reducers/categories/CategoriesReducer';
 
 
 const orStyle = {
-  marginTop: "-5px",
-  marginBottom: "30px"
+ 
+  // marginBottom: "30px",
+  // width: '40%',
+  // left: '0',
+  // position: 'relative'
+  marginTop : '-4px',
+  fontSize: '16px'
+ 
 };
 
 
@@ -91,7 +97,9 @@ function Search() {
                   </InputGroup>
                 </Form.Group>
 
-                <hr style={orStyle}></hr>
+                {/* <hr style={orStyle} ></hr> */}
+
+                <div class="separator"><span style={orStyle}>or</span></div>
 
                 <Form.Group>
                   {/* <Form.Label>Manufacturer</Form.Label> */}
@@ -126,7 +134,7 @@ function Search() {
                       <option>4</option>
                       <option>5</option>
                     </Form.Control> */}
-                  
+                
                 </Form.Group>
               </Form>
 

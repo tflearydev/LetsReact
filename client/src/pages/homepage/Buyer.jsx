@@ -20,15 +20,15 @@ function Buyer() {
 
       <Categories />
 
-      <RecentAdd />
+      <RecentAdd className='top-recent' lg={8} />
 
-      <RecentView />
+      <RecentView className='top-recent-view' />
 
       <Manufacturer />
 
-      <Email />
+      <Email className='email-style' />
 
-      <Footer />
+      <Footer className='foot-style' />
     </>
   );
 }

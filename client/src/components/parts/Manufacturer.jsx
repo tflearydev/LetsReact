@@ -14,7 +14,7 @@ import "./Manufacturer.scss";
 const { Meta } = Card;
 
 var top5 = {
-  top: "625px",
+  top: "580px",
   position: "relative",
   zIndex: "1"
 };

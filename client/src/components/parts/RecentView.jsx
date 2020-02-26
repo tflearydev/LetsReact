@@ -12,16 +12,9 @@ import "./RecentView.scss";
 
 const { Meta } = Card;
 
-var topRecentView = {
-  top: "604px",
-  position: "relative",
-  zIndex: "1",
-  marginBottom: "30px"
-};
-
-function RecentView() {
+function RecentView(props) {
   return (
-    <section style={topRecentView} className="top-recent-view">
+    <section className={props.className}>
       <Container>
         <div className="recent-view-spacing">
           <span>Recently viewed</span>

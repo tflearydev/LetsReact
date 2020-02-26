@@ -8,16 +8,18 @@ const { Search } = Input;
 
 const emailStyle = {
   position: "relative",
-  top: "581px",
+  top: "538px",
   paddingTop: "50px",
   paddingBottom: "50px",
   backgroundColor: "#EBEBEB",
   marginTop: "75px"
 };
 
-function HomeEmail() {
+function HomeEmail(props) {
+
+
   return (
-    <section style={emailStyle} className="email-style">
+    <section className={props.className}>
       {/* <Search
         placeholder="input search text"
         onSearch={value => console.log(value)}

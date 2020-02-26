@@ -1,5 +1,6 @@
 .tab-section {
     background-color: white;
+    color: #202B31;
     top: 345px;
   position: relative;
   z-Index: 1;
@@ -25,3 +26,42 @@
 }
 
 }
+ 
+@media screen and (min-width: 800px) {
+    .left-tab {
+        margin-left: -15px;
+    }
+}
+
+.active {
+    color: #408FC6;
+  }
+
+  .active::after {
+    content: "";
+   
+    width: 100px;
+    height: 7px;
+    display: block;
+    // color: #408FC6;
+    // z-index: 99;
+    background-color: #408FC6;
+    text-align: center;
+    margin-top: 9px
+   
+  }
+
+//   @media screen and (max-width: 800px) {
+//     .active {
+//       color: #0092c0;
+//     }
+
+//     .active::after {
+//       content: "";
+//       margin-left: -10%;
+//       width: 120%;
+//       height: 3px;
+//       display: block;
+//       background: #0092c0;
+//     }
+//   }

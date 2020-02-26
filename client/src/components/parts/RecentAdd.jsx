@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Card, Col, Row, Avatar } from "antd";
 import { Container } from "react-bootstrap";
@@ -9,15 +9,25 @@ import "./RecentAdd.scss";
 
 const { Meta } = Card;
 
-var topRecent = {
-  top: "561px",
-  position: "relative",
-  zIndex: "1"
-};
+// var topRecent = {
+//   top: "561px",
+//   position: "relative",
+//   zIndex: "1"
+// };
 
-function RecentAdd() {
+
+
+
+function RecentAdd(props) {
+  // const [size] = useState(props.size);
+ 
+  // const items_per_row = props.items_per_row;
+  // const item_rows = props.item_rows;
+
+
+
   return (
-    <section style={topRecent} className="top-recent">
+    <section className={props.className}>
       <Container>
         <div className="recent-add-spacing">
           <span>Recently added</span>
@@ -28,7 +38,9 @@ function RecentAdd() {
         </div>
 
         <Row gutter={16}>
-          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
+
+
+          <Col lg={props.lg} xs={24} className="recent-add-space recent-overlay">
             <a href="#">
               <Card
                 // hoverable
@@ -38,14 +50,17 @@ function RecentAdd() {
               >
                 <div className="img-overlay"></div>
                 FREIGHTLINER
+
                 <Meta title="Detroit engine - DD5 - 1.5 Lt." />
+
                 <div className="recent-price">$14,000</div>
                 {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
               </Card>
             </a>
           </Col>
 
-          <Col lg={8} xs={24} className="recent-add-space recent-overlay">
+
+          <Col lg={props.lg} xs={24} className="recent-add-space recent-overlay">
             <a href="#">
               <Card
                 // hoverable
@@ -62,7 +77,9 @@ function RecentAdd() {
             </a>
           </Col>
 
-          <Col lg={8} xs={24} className=" recent-overlay">
+
+
+          <Col lg={props.lg} xs={24} className=" recent-add-space recent-overlay">
             <a href="#">
               <Card
                 // hoverable
@@ -80,6 +97,11 @@ function RecentAdd() {
               </Card>
             </a>
           </Col>
+
+
+
+
+
         </Row>
       </Container>
     </section>

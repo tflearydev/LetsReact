@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./Footer.scss";
 
-const footStyle = {
-  position: "relative",
-  top: "606px"
-};
+// const footStyle = {
+//   position: "relative",
+//   top: "566px"
+// };
 
 const footHead = {
   fontWeight: "700",
@@ -37,9 +37,9 @@ const copyright = {
   paddingLeft: "60px"
 };
 
-function Footer() {
+function Footer(props) {
   return (
-    <footer style={footStyle} className="foot-style">
+    <footer className={props.className}>
       <Container className="foot-cont">
         <Row style={footSpace} className="footspace">
           <Col lg={3} xs={6} className="desk-footer">

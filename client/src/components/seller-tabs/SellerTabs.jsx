@@ -15,7 +15,7 @@ function SellerTabs() {
                     <Col lg={3} >
 
 
-                       <a className="tab-style"> New posting</a>
+                       <a className="tab-style active"> New posting</a>
 
 
                     </Col>
@@ -28,7 +28,7 @@ function SellerTabs() {
 
 
 
-                    <Col lg={3}>
+                    <Col lg={3} className="left-tab">
                         <a className="tab-style">Order history</a>
                     </Col>
 

@@ -46,3 +46,23 @@
     top: 500px !important;
   }
 }
+
+@media screen and (min-width: 420px) {
+  .top-recent-view {
+    top: 560px;
+  position: relative;
+  z-Index: 1;
+  margin-bottom: 30px;
+  }
+}
+
+// @media screen and (min-width: 420px) {
+//   .top-recent-view2 {
+//     top: 400px;
+//   position: relative;
+//   z-Index: 1;
+//   margin-bottom: 30px;
+//   }
+// }
+
+

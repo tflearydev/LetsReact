@@ -36,7 +36,7 @@
 .searchicon {
   width: 20px;
   height: 20px;
-  color: gray;
+  color: #858585;
 }
 
 .input-group-text {
@@ -130,4 +130,25 @@
     margin-left: auto;
     margin-right: auto
   }
+}
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+color: #C1C1C1;
+margin-top: -16px
+
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #C1C1C1;
+}
+.separator::before {
+  margin-right: .75em;
+}
+.separator::after {
+  margin-left: .75em;
 }

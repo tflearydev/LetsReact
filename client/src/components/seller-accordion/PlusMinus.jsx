@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Component} from "react";
 import { Collapse, Icon, Select } from "antd";
 import "./PlusMinus.scss";
+
 
 const { Panel } = Collapse;
 // const { Option } = Select;
@@ -37,7 +38,7 @@ const text = `
 //     />
 //   );
 
-class PlusMinus extends React.Component {
+class PlusMinus extends Component {
   state = {
     expandIconPosition: "right"
   };
@@ -68,8 +69,10 @@ class PlusMinus extends React.Component {
           expandIcon={({ isActive }) => (
             <Icon
               type="plus"
-              style={{ color: "#408FC6", fontWeight: "700 !important" }}
+              style={{ color: "#408FC6", fontSize: "19px", fontWeight: "700" }}
+              width="50px"
               rotate={isActive ? 45 : 0}
+              // fontSize="30px"
             />
           )}
           // expandIcon={(props) => this.customExpandIcon(props)}
