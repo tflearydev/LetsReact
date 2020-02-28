@@ -32,7 +32,12 @@ class BuySellButton extends Component {
         text = "Start buying";
         break;
       }
+      default: {
+      text = "Start selling";
     }
+
+  }
+
 
 
     return (

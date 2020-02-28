@@ -3,11 +3,12 @@ import Navbar from "../../components/navbar/Nav";
 import Jumbo2 from "../../components/jumbotron/Jumbo2";
 // import { Container } from 'react-bootstrap';
 import "./Buyer.scss";
-import SellerTabs from '../../components/seller-tabs/SellerTabs';
-import SellerAccordion from '../../components/seller-accordion/SellerAccordion';
+import SellerTabs from "../../components/seller-tabs/SellerTabs";
+import SellerAccordion from "../../components/seller-accordion/SellerAccordion";
 import RecentAdd from "../../components/parts/RecentAdd";
-import Email from '../../components/home-email/Email'
-import Footer from '../../components/footer/Footer'
+import RecentAdd2 from "../../components/parts/RecentAdd2";
+import Email from "../../components/home-email/Email";
+import Footer from "../../components/footer/Footer";
 import { Card, Col, Row, Avatar } from "antd";
 
 // import RecentView from "../../components/parts/RecentView"
@@ -27,36 +28,19 @@ import { Card, Col, Row, Avatar } from "antd";
 function Seller() {
   return (
     <>
-      <Navbar />
+      <Navbar className="outer-nav" />
       <Jumbo2 />
       <SellerTabs />
 
-      
       <SellerAccordion />
+
+      <RecentAdd2 className="top-recent2" lg={8} xs={12} />
+
+      <Email className="email-style2" />
+
+      <Footer className="foot-style2" />
+
       
-      <RecentAdd className="top-recent2" lg={8}/>
-
-      <Email className='email-style2' />
-
-      <Footer className='foot-style2' />
-
-      {/* <RecentView className='top-recent-view2' /> */}
-      
-
-
-      {/* <Jumbo />
-
-      <Categories />
-
-      <RecentAdd />
-
-      <RecentView />
-
-      <Manufacturer />
-
-      <Email />
-
-      <Footer /> */}
     </>
   );
 }

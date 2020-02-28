@@ -7,13 +7,13 @@ import "./Footer.scss";
 //   top: "566px"
 // };
 
-const footHead = {
-  fontWeight: "700",
-  fontSize: "20px",
-  color: "#202B31",
-  marginTop: "31px",
-  marginBottom: "31px"
-};
+// const footHead = {
+//   fontWeight: "700",
+//   fontSize: "20px",
+//   color: "#202B31",
+//   marginTop: "31px",
+//   marginBottom: "31px"
+// };
 
 const footSpace = {
   paddingRight: "0px",
@@ -44,7 +44,7 @@ function Footer(props) {
         <Row style={footSpace} className="footspace">
           <Col lg={3} xs={6} className="desk-footer">
             <a href="#">
-              <div style={footHead}>Buy</div>
+              <div className='foot-title'>Buy</div>
             </a>
 
             <a href="#" style={linkStyles}>
@@ -60,7 +60,7 @@ function Footer(props) {
 
           <Col lg={3} xs={6}>
             <a href="#">
-              <div style={footHead}>Sell</div>
+              <div className='foot-title'>Sell</div>
             </a>
 
             <a href="#" style={linkStyles}>
@@ -76,7 +76,7 @@ function Footer(props) {
 
           <Col lg={3} xs={6}>
             <a href="#">
-              <div style={footHead}>Stay Connected</div>
+              <div className='foot-title'>Stay Connected</div>
             </a>
 
             <a href="#" style={linkStyles}>
@@ -95,7 +95,7 @@ function Footer(props) {
 
           <Col lg={3} xs={6}>
             <a href="#">
-              <div style={footHead}>About</div>
+              <div className='foot-title'>About</div>
             </a>
 
             <a href="#" style={linkStyles}>

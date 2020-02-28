@@ -1,40 +1,60 @@
 @media screen and (max-width: 420px) {
-    .footspace, .copyright {
-        padding-left: 0px !important;
-    }
+  .footspace,
+  .copyright {
+    padding-left: 0px !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .foot-style {
-        top: 503px !important;
-    }
+  .foot-style {
+    top: 503px !important;
+    position: relative;
+  }
 }
 
 @media screen and (min-width: 420px) {
-    .foot-style {
-        position: relative;
-        top: 566px;
-    }
+  .foot-style {
+    position: relative;
+    top: 566px;
+  }
 }
 
 @media screen and (min-width: 420px) {
+  .foot-style2 {
+    position: relative;
+    top: 401px;
+  }
+}
+
+@media screen and (max-width: 420px) {
     .foot-style2 {
-        position: relative;
-        top: 401px;
+      position: relative;
+      top: 215px;
+    }
+  }
+
+@media screen and (max-width: 420px) {
+    .foot-title {
+        font-weight: 700;
+        font-size: 18px;
+        color: #202B31;
+        margin-top: 31px;
+        margin-bottom: 31px
     }
 }
 
-
-
-
-
+@media screen and (min-width: 420px) {
+    .foot-title {
+        font-weight: 700;
+        font-size: 20px;
+        color: #202B31;
+        margin-top: 31px;
+        margin-bottom: 31px
+    }
+}
 
 // @media screen and (min-width: 420px) {
 //     .desk-footer {
 //         margin-right: 20px !important
 //     }
 // }
-
-
-
-

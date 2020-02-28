@@ -43,7 +43,10 @@
 
 @media screen and (max-width: 420px) {
   .top-recent-view {
-    top: 500px !important;
+    top: 460px !important;
+    position: relative;
+    z-Index: 1;
+    margin-bottom: 30px;
   }
 }
 

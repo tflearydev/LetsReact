@@ -13,15 +13,15 @@ import "./Manufacturer.scss";
 
 const { Meta } = Card;
 
-var top5 = {
-  top: "580px",
-  position: "relative",
-  zIndex: "1"
-};
+// var top5 = {
+//   top: "580px",
+//   position: "relative",
+//   zIndex: "1"
+// };
 
-function Manufacturer() {
+function Manufacturer(props) {
   return (
-    <section style={top5} className="top6">
+    <section className={props.className}>
       <Container>
         <div className="recent-spacing">
           <span>Shop by manufacturer</span>

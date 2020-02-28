@@ -16,8 +16,6 @@ const emailStyle = {
 };
 
 function HomeEmail(props) {
-
-
   return (
     <section className={props.className}>
       {/* <Search

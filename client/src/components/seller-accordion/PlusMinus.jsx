@@ -1,7 +1,6 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import { Collapse, Icon, Select } from "antd";
 import "./PlusMinus.scss";
-
 
 const { Panel } = Collapse;
 // const { Option } = Select;

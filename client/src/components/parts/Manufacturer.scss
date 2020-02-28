@@ -202,9 +202,21 @@
 //     }
 // }
 
+@media screen and (min-width: 420px) {
+
+  .top6 {
+    top: 580px;
+  position: relative;
+  z-index: 1
+  }
+
+}
+
 @media screen and (max-width: 420px) {
   .top6 {
-    top: 522px !important;
+    top: 464px !important;
+    position: relative;
+  z-index: 1
   }
 }
 

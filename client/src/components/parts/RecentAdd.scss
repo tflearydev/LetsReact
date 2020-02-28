@@ -1,6 +1,19 @@
 .recent-img {
   width: 360px;
   height: 280px;
+  
+}
+
+.recent-img2 {
+  width: 360px;
+  height: 280px;
+  
+}
+
+@media screen and (max-width: 500px) {
+  .recent-img2 {
+    height: 183px
+  }
 }
 
 .see-all {
@@ -12,6 +25,12 @@
   padding-bottom: 10px !important;
   padding-left: 0 !important;
  
+}
+
+@media screen and (min-width: 500px) {
+  .visual-only {
+    display: none !important
+  }
 }
 
 .recent-add-spacing {
@@ -58,13 +77,15 @@
 .top-recent {
   top: 561px;
   position: relative;
-  z-Index: 1
+  z-Index: 2
 }
 }
 
 @media screen and (max-width: 420px) {
   .top-recent {
-    top: 458px !important;
+    top: 450px !important;
+    position: relative;
+    z-Index: 2
   }
 }
 
@@ -76,4 +97,13 @@
     z-Index: 1;
   }
   }
+
+  @media screen and (max-width: 420px) {
+
+    .top-recent2 {
+      top: 270px;
+      position: relative;
+      z-Index: 1;
+    }
+    }
 

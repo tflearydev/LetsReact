@@ -15,16 +15,18 @@ import Footer from '../../components/footer/Footer'
 function Buyer() {
   return (
     <>
-      <Navbar />
-      <Jumbo />
+      <Navbar className = 'outer-nav' />
 
+      {/* beginning of jumbotron */}
+      <Jumbo className='jumbo'/>
+{/* end of jumbotron */}
       <Categories />
 
-      <RecentAdd className='top-recent' lg={8} />
+      <RecentAdd className='top-recent' lg={8} xs={24} />
 
       <RecentView className='top-recent-view' />
 
-      <Manufacturer />
+      <Manufacturer className='top6' />
 
       <Email className='email-style' />
 

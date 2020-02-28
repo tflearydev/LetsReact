@@ -1,4 +1,4 @@
-import React, {useReducer, useEffect} from "react";
+import React, { useReducer, useEffect } from "react";
 import { Card, Form, Container, Row, Col, Button } from "react-bootstrap";
 // import { Menu, Dropdown, Button, Icon, message  } from 'antd';
 import "./Search.scss";
@@ -12,97 +12,89 @@ import searchicon from "../../assets/searchicon.png";
 import Drop from "./Drop";
 
 //API
-import {fetchCategories} from '../../api/categories-api';
-import {fetchMakesByCategoryId} from '../../api/makes-api';
-
+import { fetchCategories } from "../../api/categories-api";
+import { fetchMakesByCategoryId } from "../../api/makes-api";
 
 //Reducers
-import CategoriesReducer from '../../reducers/categories/CategoriesReducer';
-import MakesReducer from '../../reducers/makes/MakesReducer';
+import CategoriesReducer from "../../reducers/categories/CategoriesReducer";
+import MakesReducer from "../../reducers/makes/MakesReducer";
 
 //Drop Loader During API Calls
 import WithLoadingDrop from "../WithLoadingDrop";
 const WithLoadingDropCategories = WithLoadingDrop(Drop);
 const WithLoadingDropMakes = WithLoadingDrop(Drop);
 
-
 const orStyle = {
- 
   // marginBottom: "30px",
   // width: '40%',
   // left: '0',
   // position: 'relative'
-  marginTop : '-4px',
-  fontSize: '16px'
- 
+  marginTop: "-4px",
+  fontSize: "16px"
 };
-
 
 function Search() {
   //STATE MANAGEMENT
-  const [categoriesState, dispatchCategories] = useReducer(CategoriesReducer,{
+  const [categoriesState, dispatchCategories] = useReducer(CategoriesReducer, {
     isFetching: false,
     data: [],
     dataLoaded: false,
     selected_id: null
-
   });
 
-  const [makesState, dispatchMakes] = useReducer(MakesReducer,{
+  const [makesState, dispatchMakes] = useReducer(MakesReducer, {
     isFetching: false,
     data: [],
     dataLoaded: false,
     selected_id: null
-
   });
 
   //Onload check state
   useEffect(() => {
-    if(!categoriesState.dataLoaded){
-      dispatchCategories({type: 'IS_FETCHING', payload: true});
-      runFetchCategories();            
+    if (!categoriesState.dataLoaded) {
+      dispatchCategories({ type: "IS_FETCHING", payload: true });
+      runFetchCategories();
     }
-  }, []);//pass in array what to look for to rerender
+  }, []); //pass in array what to look for to rerender
 
   //FUNCTIONS AND EVENT HANDLERS - ONLOAD
   const runFetchCategories = async () => {
-    const categories_data = await fetchCategories();  
-    dispatchCategories({type: 'LOAD_DATA', payload: categories_data}); 
-  }
+    const categories_data = await fetchCategories();
+    dispatchCategories({ type: "LOAD_DATA", payload: categories_data });
+  };
 
   //FUNCTIONS AND EVENT HANDLERS - Categories onchange
-  const runFetchMakesByCategoryId = async (category_id) => {
-    const makes_data = await fetchMakesByCategoryId(category_id);  
-    dispatchMakes({type: 'LOAD_DATA', payload: makes_data}); 
-  }
+  const runFetchMakesByCategoryId = async category_id => {
+    const makes_data = await fetchMakesByCategoryId(category_id);
+    dispatchMakes({ type: "LOAD_DATA", payload: makes_data });
+  };
 
-  const onCategoriesChange = (e) =>{
-      let value = e; 
-      if(isNaN(value)){
-        dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: null}); 
-        dispatchMakes({type: 'LOAD_DATA', payload: []});
-        //dispatchModel({type: 'LOAD_DATA', payload: []});
+  const onCategoriesChange = e => {
+    let value = e;
+    if (isNaN(value)) {
+      dispatchCategories({ type: "UPDATE_SELECTED_ID", payload: null });
+      dispatchMakes({ type: "LOAD_DATA", payload: [] });
+      //dispatchModel({type: 'LOAD_DATA', payload: []});
+    } else {
+      dispatchCategories({ type: "UPDATE_SELECTED_ID", payload: value });
+      dispatchMakes({ type: "IS_FETCHING", payload: true });
+      runFetchMakesByCategoryId(value);
+    }
+  };
 
-      }else{
-        dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: value}); 
-        dispatchMakes({type: 'IS_FETCHING', payload: true});
-        runFetchMakesByCategoryId(value);   
-      }
-  }
-
-  const onMakesChange = (e) =>{
-    let value = e; 
+  const onMakesChange = e => {
+    let value = e;
     // if(isNaN(value)){
-    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: null}); 
+    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: null});
     //   dispatchMakes({type: 'LOAD_DATA', payload: []});
     //   //dispatchModel({type: 'LOAD_DATA', payload: []});
 
     // }else{
-    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: value}); 
+    //   dispatchCategories({type: 'UPDATE_SELECTED_ID', payload: value});
     //   dispatchMakes({type: 'IS_FETCHING', payload: true});
-    //   runFetchMakesByCategoryId(value);   
+    //   runFetchMakesByCategoryId(value);
     // }
-}
+  };
 
   return (
     <Container>
@@ -149,20 +141,28 @@ function Search() {
 
                 {/* <hr style={orStyle} ></hr> */}
 
-                <div class="separator"><span style={orStyle}>or</span></div>
+                <div class="separator">
+                  <span style={orStyle}>or</span>
+                </div>
 
                 <Form.Group>
                   {/* Categories Dropdown */}
-                  <WithLoadingDropCategories type="default" state = {categoriesState} onChange={onCategoriesChange} data={categoriesState.data} />
-              
-
-                  
+                  <WithLoadingDropCategories
+                    type="default"
+                    state={categoriesState}
+                    onChange={onCategoriesChange}
+                    data={categoriesState.data}
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
                   {/* Makes Dropdown */}
-                  <WithLoadingDropMakes type="v2" state = {makesState} onChange={onMakesChange} data={makesState.data} />
-
+                  <WithLoadingDropMakes
+                    type="v2"
+                    state={makesState}
+                    onChange={onMakesChange}
+                    data={makesState.data}
+                  />
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
@@ -174,7 +174,6 @@ function Search() {
                       <option>4</option>
                       <option>5</option>
                     </Form.Control> */}
-                
                 </Form.Group>
               </Form>
 

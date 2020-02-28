@@ -3,10 +3,15 @@ import { Jumbotron, Container, Button } from "react-bootstrap";
 import "./Jumbotron.scss";
 import Search from "./Search";
 
-function Jumbo() {
+function Jumbo(props) {
+
+
+
+
+
   return (
     <section className="head">
-      <Jumbotron className="jumbo">
+      <Jumbotron className={props.className}>
         <div className="overlay"></div>
 
         <Search />

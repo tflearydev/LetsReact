@@ -18,7 +18,7 @@ import Button from "./BuySellButton";
 
 
 
-function appNav() {
+function appNav(props) {
 
   const WrappedButton = withRouter(Button);
 
@@ -26,7 +26,7 @@ function appNav() {
   return (
     <>
       
-        <nav className="outerNav">
+        <nav className={props.className}>
           <Container>
             <Navbar.Brand href="/">
               <div className="circle"></div>

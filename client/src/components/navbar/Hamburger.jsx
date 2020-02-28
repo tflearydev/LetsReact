@@ -48,11 +48,12 @@ var styles = {
     padding: "0.8em"
   },
   bmItem: {
-    display: "block"
+    display: "block",
+    zIndex: "9999"
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
-    zIndex: "9999",
+    zIndex: "999",
     width: "100vw",
     height: "100%",
     top: "0",
@@ -80,11 +81,14 @@ class Hamburger extends Component {
             Home
           </a>
 
-          <a id="about" className="menu-item" href="/about">
+          <a id="about" className="menu-item" href="/">
             About
           </a>
-          <a id="contact" className="menu-item" href="/contact">
+          <a id="contact" className="menu-item" href="/">
             Contact
+          </a>
+          <a id="contact" className="menu-item" href="/product">
+            Product Page 
           </a>
           <a onClick={this.showSettings} className="menu-item--small" href="">
             Settings

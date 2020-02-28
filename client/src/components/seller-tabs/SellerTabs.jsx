@@ -8,11 +8,11 @@ function SellerTabs() {
 
 
         <div className='tab-section mx-auto'>
-            <Container>
+            <Container className='slide'>
                 <Row>
 
 
-                    <Col lg={3} >
+                    <Col lg={3} xs={7}>
 
 
                        <a className="tab-style active"> New posting</a>
@@ -22,25 +22,25 @@ function SellerTabs() {
 
 
 
-                    <Col lg={3}>
-                        <a className="tab-style">Inventory</a>
+                    <Col lg={3} xs={7} >
+                        <a className="tab-style inv" >Inventory</a>
                     </Col>
 
 
 
-                    <Col lg={3} className="left-tab">
+                    <Col lg={3} xs={7} className="left-tab" >
                         <a className="tab-style">Order history</a>
                     </Col>
 
 
 
-                    <Col lg={3}>
+                    <Col lg={3} xs={7} >
                        <a className="tab-style">Notifications</a>
                     </Col>
 
 
 
-                    <Col lg={3} className='last-tab'>
+                    <Col lg={3} xs={7} className='last-tab '>
                         <a className="tab-style">Employees</a>
                     </Col>
 

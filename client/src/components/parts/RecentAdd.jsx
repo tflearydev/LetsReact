@@ -15,16 +15,11 @@ const { Meta } = Card;
 //   zIndex: "1"
 // };
 
-
-
-
 function RecentAdd(props) {
   // const [size] = useState(props.size);
- 
+
   // const items_per_row = props.items_per_row;
   // const item_rows = props.item_rows;
-
-
 
   return (
     <section className={props.className}>
@@ -40,7 +35,13 @@ function RecentAdd(props) {
         <Row gutter={16}>
 
 
-          <Col lg={props.lg} xs={24} className="recent-add-space recent-overlay">
+
+
+          <Col
+            lg={props.lg}
+            xs={props.xs}
+            className="recent-add-space recent-overlay"
+          >
             <a href="#">
               <Card
                 // hoverable
@@ -50,9 +51,7 @@ function RecentAdd(props) {
               >
                 <div className="img-overlay"></div>
                 FREIGHTLINER
-
                 <Meta title="Detroit engine - DD5 - 1.5 Lt." />
-
                 <div className="recent-price">$14,000</div>
                 {/* <Meta title="Detroit engine - DD5 - 1.5 Lt." description="www.instagram.com" /> */}
               </Card>
@@ -60,7 +59,18 @@ function RecentAdd(props) {
           </Col>
 
 
-          <Col lg={props.lg} xs={24} className="recent-add-space recent-overlay">
+
+
+
+
+
+          
+
+          <Col
+            lg={props.lg}
+            xs={props.xs}
+            className="recent-add-space recent-overlay"
+          >
             <a href="#">
               <Card
                 // hoverable
@@ -77,16 +87,18 @@ function RecentAdd(props) {
             </a>
           </Col>
 
-
-
-          <Col lg={props.lg} xs={24} className=" recent-add-space recent-overlay">
+          <Col
+            lg={props.lg}
+            xs={props.xs}
+            className=" recent-add-space recent-overlay"
+          >
             <a href="#">
               <Card
                 // hoverable
                 //   style={{ width: 240 }}
 
                 cover={
-                  <img alt="example" src={Engine} className="recent-img " />
+                  <img alt="example" src={Engine} className="recent-img "  />
                 }
               >
                 <div className="img-overlay"></div>
@@ -97,11 +109,6 @@ function RecentAdd(props) {
               </Card>
             </a>
           </Col>
-
-
-
-
-
         </Row>
       </Container>
     </section>

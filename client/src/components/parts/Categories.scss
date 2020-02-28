@@ -1,91 +1,76 @@
-
 .man-card-text {
-    text-align: center;
-    padding-top: 10px
- 
+  text-align: center;
+  padding-top: 10px;
 }
-
 
 .cat-img {
-    height: 91px;
-    width: 89px !important;
-    background-color: transparent;
-    
+  height: 91px;
+  width: 89px !important;
+  background-color: transparent;
 }
 
-
 @media screen and (min-width: 420px) {
-    .cat-img2 {
+  .cat-img2 {
     width: 135px !important;
     height: 91px;
     background-color: transparent;
-    
-}
+  }
 }
 
 // @media screen and (max-width: 420px) {
 //     .cat-img2 {
 //         height: 80px;
-//         width: 100px 
+//         width: 100px
 //     }
 // }
 
-
-
-
 .ant-card-body {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    padding-right: 0px !important;
-    
-   
-  }
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-right: 0px !important;
+}
 
 @media screen and (max-width: 420px) {
-    .cat-img, .cat-img2 {
-        height: 80px;
-        width: 76px
-    }
+  .cat-img,
+  .cat-img2 {
+    height: 80px;
+    width: 76px;
+  }
 }
 
-.cat-div:hover  {
-    background-color: #408FC6;
-    transition: .5s ease;
-    // color: white !important
-    
+.cat-div:hover {
+  background-color: #408fc6;
+  transition: 0.2s ease;
+  // color: white !important
 }
 .cat-div:hover .ant-card-meta-title {
-    color: white !important
+  color: white !important;
 }
 .cat-div {
-    padding-top: 30px !important;
-    padding-bottom: 5px !important;
+  padding-top: 30px !important;
+  padding-bottom: 5px !important;
 }
 
 .ant-card-meta-title {
-    font-size: 20px !important;
-    font-weight:  700 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
 }
 
 @media screen and (max-width: 420px) {
-    .ant-card-meta-title {
-        font-size: 16px !important;
-        font-weight:  500 !important;
-    }
+  .ant-card-meta-title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
 }
 
 @media screen and (max-width: 420px) {
-    .top-5 {
-        top: 427px !important
-    }
+  .top-5 {
+    top: 427px !important;
+  }
 }
 
-
-
 @media screen and (max-width: 420px) {
-    .cat-div {
-        padding-top: 20px !important;
-       
-    }
-    
+  .cat-div {
+    padding-top: 20px !important;
+  }
 }

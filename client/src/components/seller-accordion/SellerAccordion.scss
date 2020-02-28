@@ -3,10 +3,22 @@
   height: 279px;
 }
 
+@media screen and (max-width: 500px) {
+  .seller-pic {
+    display: none;
+  }
+}
+
 .seller-accordion {
   top: 385px;
   position: relative;
   z-index: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .seller-accordion {
+    top: 237px
+  }
 }
 
 .more-posts {
@@ -17,6 +29,23 @@
   width: 452px;
   margin-bottom: 35px;
 }
+
+@media screen and (max-width: 500px) {
+  .more-posts {
+    font-size: 7.4vw;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+// @media screen and (max-width: 390px) {
+//   .more-posts {
+//     font-size: 25px;
+//     text-align: center
+//   }
+// }
+
 
 .create-btn {
   width: 100%;
@@ -33,6 +62,13 @@
 
 .more-posts-column {
   padding-right: 120px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .more-posts-column {
+    padding-right: 16px !important;
+    padding-left: 16px !important
+  }
 }
 
 // .ant-collapse>.ant-collapse-item>.ant-collapse-header .arrow:before {

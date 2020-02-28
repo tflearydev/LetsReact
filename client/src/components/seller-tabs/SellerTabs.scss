@@ -1,55 +1,114 @@
 .tab-section {
-    background-color: white;
-    color: #202B31;
-    top: 345px;
+  background-color: white;
+  color: #202b31;
+  top: 345px;
   position: relative;
-  z-Index: 1;
+  z-index: 1;
   font-size: 18px;
   max-width: 1199px;
- height: 81px;
- padding-top: 25px;
-//  text-align: center
+  height: 81px;
+  padding-top: 25px;
+  //  text-align: center
+}
+
+@media screen and (max-width: 420px) {
+  .tab-section {
+    background-color: white;
+    color: #202b31;
+    top: 220px;
+    position: relative;
+    z-index: 0;
+    font-size: 18px;
+    max-width: 1199px;
+    height: 81px;
+    padding-top: 16px;
+    // overflow-x: scroll;
+    // overflow-x: auto;
+    // white-space: nowrap;
+    
+  }
+}
+
+div.slide {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+div.slide [class*="col"], /* TWBS v3 */
+div.slide [class*="span"] {  /* TWBS v2 */
+    display: inline-block;
+    float: none; /* Very important */
+}
+
+// .scroll {
+//     overflow-x: scroll
+// }
+
+@media screen and (max-width: 420px) {
+  .inv {
+    padding-left: 20px;
+  }
 }
 
 .tab-style {
-    font-size: 18px
+  font-size: 18px;
 }
 
-
 @media (min-width: 992px) {
-
-.ant-col-lg-3 {
+  .ant-col-lg-3 {
     display: block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 13.5% !important;
+  }
 }
 
-}
- 
 @media screen and (min-width: 800px) {
+  .left-tab {
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
     .left-tab {
-        margin-left: -15px;
+        margin-right: 15px;
+        margin-left: 15px
     }
 }
 
 .active {
-    color: #408FC6;
+  color: #408fc6;
+}
+
+.active::after {
+  content: "";
+
+  width: 100px;
+  height: 7px;
+  display: block;
+  // color: #408FC6;
+  // z-index: 99;
+  background-color: #408fc6;
+  text-align: center;
+  margin-top: 9px;
+}
+
+@media screen and (max-width: 420px) {
+  .active {
+    color: #408fc6;
   }
 
   .active::after {
     content: "";
-   
-    width: 100px;
+    width: 99px;
     height: 7px;
     display: block;
     // color: #408FC6;
     // z-index: 99;
-    background-color: #408FC6;
+    background-color: #408fc6;
     text-align: center;
-    margin-top: 9px
-   
+    margin-top: 9px;
   }
+}
 
 //   @media screen and (max-width: 800px) {
 //     .active {
