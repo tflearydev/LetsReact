@@ -22,7 +22,8 @@ function Buyer() {
 {/* end of jumbotron */}
       <Categories />
 
-      <RecentAdd className='top-recent' lg={8} xs={24} />
+
+      <RecentAdd className='top-recent' lg={8} xs={24} items_count={3} row_count = {1} />
 
       <RecentView className='top-recent-view' />
 
