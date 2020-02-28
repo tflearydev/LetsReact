@@ -20,7 +20,7 @@ function Buyer() {
 
       <Categories />
 
-      <RecentAdd />
+      <RecentAdd lg={8} xs={24} items_count={3} row_count = {1} />
 
       <RecentView />
 
