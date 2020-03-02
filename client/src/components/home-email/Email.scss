@@ -21,7 +21,7 @@
   text-align: right;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .first-text {
     font-size: 16px;
     text-align: left !important;
@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 950px) {
   .email-style {
     padding-top: 35px !important;
     padding-bottom: 35px !important;
@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 950px) {
   .email-style {
     position: relative;
     top: 538px;
@@ -85,7 +85,7 @@
   padding-left: 40px !important;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .submitt {
     padding-left: 0px !important;
   }

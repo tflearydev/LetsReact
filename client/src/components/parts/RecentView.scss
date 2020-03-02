@@ -41,7 +41,7 @@
   font-size: 20px !important;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .top-recent-view {
     top: 460px !important;
     position: relative;
@@ -50,7 +50,7 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 800px) {
   .top-recent-view {
     top: 560px;
   position: relative;

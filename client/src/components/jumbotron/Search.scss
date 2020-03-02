@@ -98,7 +98,7 @@
   border-color: #408fc6 !important;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .welcome {
     text-align: center;
     font-size: 26px;
@@ -120,7 +120,7 @@
 //   }
 // }
 
-@media screen and (max-width: 1200px) and (min-width: 420px) {
+@media screen and (max-width: 1200px) and (min-width: 800px) {
   .welcome {
     text-align: center;
     font-size: 40px;

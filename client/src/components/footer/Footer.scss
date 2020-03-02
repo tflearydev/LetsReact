@@ -1,18 +1,18 @@
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 950px) {
   .footspace,
   .copyright {
     padding-left: 0px !important;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .foot-style {
     top: 503px !important;
     position: relative;
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 800px) {
   .foot-style {
     position: relative;
     top: 566px;

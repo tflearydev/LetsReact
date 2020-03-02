@@ -33,10 +33,6 @@ function RecentAdd(props) {
         </div>
 
         <Row gutter={16}>
-
-
-
-
           <Col
             lg={props.lg}
             xs={props.xs}
@@ -57,14 +53,6 @@ function RecentAdd(props) {
               </Card>
             </a>
           </Col>
-
-
-
-
-
-
-
-          
 
           <Col
             lg={props.lg}
@@ -98,7 +86,7 @@ function RecentAdd(props) {
                 //   style={{ width: 240 }}
 
                 cover={
-                  <img alt="example" src={Engine} className="recent-img "  />
+                  <img alt="example" src={Engine} className="recent-img " />
                 }
               >
                 <div className="img-overlay"></div>

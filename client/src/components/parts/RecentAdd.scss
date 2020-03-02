@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 800px) {
 
 .top-recent {
   top: 561px;
@@ -81,7 +81,7 @@
 }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 800px) {
   .top-recent {
     top: 450px !important;
     position: relative;
