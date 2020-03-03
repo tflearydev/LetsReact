@@ -147,13 +147,16 @@ function Search() {
 
                 <Form.Group>
                   {/* Categories Dropdown */}
+               
                   <WithLoadingDropCategories
                     type="default"
                     state={categoriesState}
                     onChange={onCategoriesChange}
                     data={categoriesState.data}
                   />
+                  
                 </Form.Group>
+
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
                   {/* Makes Dropdown */}
@@ -163,6 +166,7 @@ function Search() {
                     onChange={onMakesChange}
                     data={makesState.data}
                   />
+
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlSelect2">
