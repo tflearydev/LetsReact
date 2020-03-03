@@ -6,16 +6,27 @@
     margin-left: 0px !important
 }
 
-.carousel .thumb img {
-    width: 88px !important;
-    height: 75px
+.carousel .thumb {
+    padding: 0px !important;
+  margin-right: 20px !important;
+  z-index: 99 !important
+  
 }
 
-@media screen and (max-width: 800px) {
-    .thumb {
-        width: 77px !important
-    }
+// .thumbs {
+   
+// }
+
+.carousel .thumb img, .carousel .thumb {
+    width: 88px !important;
+    height: 84px !important
 }
+
+// @media screen and (max-width: 800px) {
+//     .thumb {
+//         width: 77px !important
+//     }
+// }
 
 .legend, .control-dots, .carousel-status {
     display: none !important
