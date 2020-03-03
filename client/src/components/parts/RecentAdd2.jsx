@@ -25,7 +25,7 @@ function RecentAdd(props) {
     <section className={props.className}>
       <Container>
         <div className="recent-add-spacing">
-          <span>Recently posted</span>
+          <span>Recently added</span>
 
           <a href="#" className="see-all">
             See All

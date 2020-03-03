@@ -1,0 +1,33 @@
+.thumbs {
+    padding-left: 0 !important;
+}
+
+.thumbs-wrapper.axis-vertical {
+    margin-left: 0px !important
+}
+
+.carousel .thumb img {
+    width: 88px !important;
+    height: 75px
+}
+
+@media screen and (max-width: 800px) {
+    .thumb {
+        width: 77px !important
+    }
+}
+
+.legend, .control-dots, .carousel-status {
+    display: none !important
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border-bottom: 8px solid #408FC6 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+}
+
+.carousel .slide img {
+    height: 415px !important
+}

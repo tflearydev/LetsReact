@@ -1,0 +1,61 @@
+.thumbnail {
+    top: 120px;
+}
+
+.detroit {
+    font-size: 43px;
+    font-weight: 600;
+    color: #202B31;
+    line-height: 1.2;
+    margin-top: -10px;
+}
+
+.second-column {
+    padding-top: 0px !important;
+}
+
+.tags {
+    color: #72747A;
+    font-size: 15px;
+    background-color: #F2F2F2;
+    border-radius: 2px;
+    padding: 10px 12px;
+    margin-right: 8px;
+    margin-top: 15px !important;
+    font-weight: 600;
+  float: left
+
+}
+
+
+.similar-tags {
+    color: #72747A;
+    font-size: 15px;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 10px 12px;
+    margin-right: 8px;
+    margin-top: 15px !important;
+    border: 1px solid #C1C1C1;
+    // border-color: #C1C1C1 !important;
+    font-weight: 600;
+  float: left
+}
+.specs {
+    margin-top: 11px
+}
+
+.spec-row {
+    margin-top: 6px !important;
+    border-bottom: 1px solid #E3E3E3;
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #202B31
+}
+
+
+.spec-space {
+    margin-top: 20px !important
+}
+

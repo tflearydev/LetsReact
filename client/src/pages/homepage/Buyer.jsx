@@ -24,7 +24,7 @@ function Buyer() {
 
       <RecentAdd className='top-recent' lg={8} xs={24} />
 
-      <RecentView className='top-recent-view' />
+      <RecentView className='top-recent-view' text='Recently Viewed' />
 
       <Manufacturer className='top6' />
 

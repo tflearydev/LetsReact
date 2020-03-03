@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 500px) {
   .email-style2 {
     position: relative;
     top: 380px;
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   .email-style2 {
     position: relative;
     top: 218px;
@@ -73,6 +73,19 @@
     margin-top: 75px;
   }
 }
+
+
+@media screen and (min-width: 500px) {
+  .email-style3 {
+    position: relative;
+    top: 175px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ebebeb;
+    margin-top: 75px;
+  }
+}
+
 
 .ant-btn {
   border-radius: 0px 2px 2px 0px !important;

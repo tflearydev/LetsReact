@@ -11,7 +11,7 @@
     left: 0;
   }
   
-  @media screen and (min-width: 420px) {
+  @media screen and (min-width: 500px) {
     .jumbo2 {
     height: 412px;
     width: 100vw;
@@ -28,7 +28,7 @@
   }
 }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 500px) {
     .jumbo2 {
       height: 225px;
       width: 100vw;
@@ -55,7 +55,7 @@
       width: 100%
   }
 
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 500px) {
     .welcome-back {
       color: white;
       font-size: 26px;
@@ -90,10 +90,10 @@
     width: 100vw;
   }
   
-  @media screen and (max-width: 420px) {
-    .jumbo2,
-    .overlay2 {
-      height: 225px
-    }
-  }
+  // @media screen and (max-width: 420px) {
+  //   .jumbo2,
+  //   .overlay2 {
+  //     height: 225px
+  //   }
+  // }
   

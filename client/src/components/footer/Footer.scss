@@ -19,17 +19,24 @@
   }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 500px) {
   .foot-style2 {
     position: relative;
     top: 401px;
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     .foot-style2 {
       position: relative;
       top: 215px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .foot-style3 {
+      position: relative;
+      top: 195px;
     }
   }
 

@@ -17,7 +17,7 @@ function RecentView(props) {
     <section className={props.className}>
       <Container>
         <div className="recent-view-spacing">
-          <span>Recently viewed</span>
+          <span>{props.text}</span>
 
           <a href="#" className="see-all">
             See All

@@ -10,9 +10,7 @@ function callback(key) {
 }
 
 const text = `
-    A dog is a type of domesticated animal.
-    Known for its loyalty and faithfulness,
-    it can be found as a welcome guest in many households across the world.
+When posting a new product on Generation parts it’s important to remember ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
   `;
 
 //   function customExpandIcon(props) {
@@ -79,12 +77,13 @@ class PlusMinus extends Component {
           className="plus-minus"
         >
           <Panel
-            header="This is panel header 1"
+            header="New product post info"
             key="1"
             style={{
               fontWeight: "600",
               fontSize: "18px",
-              color: "#000000 !important"
+              color: "#000000 !important",
+              letterSpacing: "0"
             }}
           >
             <div
@@ -100,12 +99,13 @@ class PlusMinus extends Component {
             </div>
           </Panel>
           <Panel
-            header="This is panel header 2"
+            header="Posting tips"
             key="2"
             style={{
               fontWeight: "600",
               fontSize: "18px",
-              color: "#000000 !important"
+              color: "#000000 !important",
+              letterSpacing: "0"
             }}
           >
             <div
