@@ -10,7 +10,6 @@ import Manufacturer from "../../components/parts/Manufacturer";
 import Email from "../../components/home-email/Email";
 import Footer from '../../components/footer/Footer'
 
-// import { Container } from "react-bootstrap";
 
 function Buyer() {
   return (

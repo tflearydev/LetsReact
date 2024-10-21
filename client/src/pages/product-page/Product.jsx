@@ -9,22 +9,12 @@ import RecentView from "../../components/parts/RecentView";
 import Email from "../../components/home-email/Email";
 import Footer from "../../components/footer/Footer"
 
-// const detroit = {
-//     fontSize: '43px',
-//     fontWeight: '600',
-//     color: '#202B31'
-
-// }
 
 function Product() {
   return (
-    // <div className={props.className}>Hello</div>
 
     <>
       <Nav className="outer-nav-product" />
-
-
-
 
       <Container>
         <Row className="thumbnail" gutter={35}>

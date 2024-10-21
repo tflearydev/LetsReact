@@ -11,19 +11,6 @@ import Email from "../../components/home-email/Email";
 import Footer from "../../components/footer/Footer";
 import { Card, Col, Row, Avatar } from "antd";
 
-// import RecentView from "../../components/parts/RecentView"
-// import Categories from "../../components/parts/Categories";
-// import RecentAdd from "../../components/parts/RecentAdd";
-// import RecentView from "../../components/parts/RecentView";
-// import Manufacturer from "../../components/parts/Manufacturer";
-// import Email from "../../components/home-email/Email";
-// import Footer from '../../components/footer/Footer'
-
-// import { Container } from "react-bootstrap";
-
-// const recentA = {
-//   top: '200px !important'
-// }
 
 function Seller() {
   return (
